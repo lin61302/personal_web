@@ -1198,25 +1198,54 @@ body{ overflow-x: hidden; }
   transform: scale(var(--avatar-zoom));
   transform-origin: var(--avatar-x) var(--avatar-y);
 }
+
+
+
+
 /* =========================================================
-   Links tab: colorful buttons (techy + harmonious)
+   Links tab: neon link buttons (techy + harmonious)
+   - scoped to #panel-links only
+   - no HTML changes required
    ========================================================= */
 
-#panel-links .link-card{
-  --tone1: rgba(255,58,166,.78);
-  --tone2: rgba(124,92,255,.70);
+#panel-links{
+  /* default tones (magenta → violet) */
+  --tone1: rgba(255,58,166,.82);
+  --tone2: rgba(124,92,255,.74);
 }
 
-#panel-links .link-card.tone-cool{
-  --tone1: rgba(124,92,255,.78);
-  --tone2: rgba(73,242,194,.66);
+/* Give each of the 3 link cards its own harmonious tone */
+#panel-links > .section > .cards > .card:nth-child(1){
+  --tone1: rgba(255,58,166,.84);
+  --tone2: rgba(124,92,255,.74);
 }
-
-#panel-links .link-card.tone-mint{
+#panel-links > .section > .cards > .card:nth-child(2){
+  --tone1: rgba(124,92,255,.84);
+  --tone2: rgba(73,242,194,.70);
+}
+#panel-links > .section > .cards > .card:nth-child(3){
   --tone1: rgba(73,242,194,.78);
-  --tone2: rgba(255,58,166,.58);
+  --tone2: rgba(124,92,255,.74);
 }
 
+/* Card micro accent line */
+#panel-links > .section > .cards > .card{
+  position: relative;
+  overflow: hidden;
+}
+#panel-links > .section > .cards > .card::before{
+  content:"";
+  position:absolute;
+  left: 16px;
+  right: 16px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--tone1), var(--tone2), transparent);
+  opacity: .55;
+  pointer-events:none;
+}
+
+/* Link buttons */
 #panel-links .link-list{ gap: 12px; }
 
 #panel-links .link-item{
@@ -1231,6 +1260,7 @@ body{ overflow-x: hidden; }
     linear-gradient(135deg, var(--tone1), var(--tone2)) border-box;
 
   box-shadow: 0 14px 40px rgba(0,0,0,.34);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: rgba(255,255,255,.92);
   text-decoration: none;
@@ -1284,41 +1314,38 @@ body{ overflow-x: hidden; }
 
 #panel-links .link-item:hover::after{
   opacity: 1;
-  animation: linkSheen .78s ease-out;
+  animation: linkSheenLinks .78s ease-out;
 }
 
-@keyframes linkSheen{
+@keyframes linkSheenLinks{
   from{ transform: translateX(-140%) skewX(-22deg); }
   to{ transform: translateX(140%) skewX(-22deg); }
 }
 
-#panel-links .link-item:focus-visible{
-  outline: none;
-  box-shadow:
-    0 0 0 4px rgba(255,58,166,.20),
-    0 18px 60px rgba(0,0,0,.58);
-}
-
-#panel-links .link-item.tone-neutral{
+/* A few intentionally “quieter” buttons, so it isn’t a rainbow */
+#panel-links > .section > .cards > .card:nth-child(1) .link-row .link-item{
   --tone1: rgba(255,255,255,.22);
   --tone2: rgba(255,255,255,.08);
   filter: saturate(.96);
 }
-#panel-links .link-item.tone-accent{
-  --tone1: rgba(255,58,166,.82);
-  --tone2: rgba(124,92,255,.72);
+#panel-links > .section > .cards > .card:nth-child(1) .link-list > .link-item:last-child{
+  --tone1: rgba(255,255,255,.20);
+  --tone2: rgba(255,255,255,.07);
+  filter: saturate(.96);
 }
-#panel-links .link-item.tone-cool{
-  --tone1: rgba(124,92,255,.82);
-  --tone2: rgba(73,242,194,.70);
+#panel-links > .section > .cards > .card:nth-child(2) .link-list > .link-item:nth-child(2){
+  --tone1: rgba(255,255,255,.22);
+  --tone2: rgba(255,255,255,.08);
+  filter: saturate(.96);
 }
-#panel-links .link-item.tone-mint{
-  --tone1: rgba(73,242,194,.82);
-  --tone2: rgba(124,92,255,.62);
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(3){
+  --tone1: rgba(255,255,255,.22);
+  --tone2: rgba(255,255,255,.08);
+  filter: saturate(.96);
 }
 
-/* Copy buttons match the link buttons */
-#panel-links .link-card .copy-btn{
+/* Copy buttons match the new vibe */
+#panel-links .copy-btn{
   position: relative;
   overflow: hidden;
   border: 1px solid transparent;
@@ -1330,14 +1357,14 @@ body{ overflow-x: hidden; }
   box-shadow: 0 14px 38px rgba(0,0,0,.32);
 }
 
-#panel-links .link-card .copy-btn:hover{
+#panel-links .copy-btn:hover{
   border: 1px solid transparent;
   background:
     linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03)) padding-box,
     linear-gradient(135deg, var(--tone1), var(--tone2)) border-box;
 }
 
-#panel-links .link-card .copy-btn::after{
+#panel-links .copy-btn::after{
   content:"";
   position:absolute;
   inset:0;
@@ -1348,13 +1375,13 @@ body{ overflow-x: hidden; }
   transform: translateX(-140%) skewX(-22deg);
 }
 
-#panel-links .link-card .copy-btn:hover::after{
+#panel-links .copy-btn:hover::after{
   opacity: 1;
-  animation: linkSheen .78s ease-out;
+  animation: linkSheenLinks .78s ease-out;
 }
 
-/* Blurbs get a subtle tinted “callout” feel */
-#panel-links .link-blurb{
+/* Blurbs: subtle tinted callouts */
+#panel-links > .section > .cards > .card p.tiny.muted{
   margin-top: 12px;
   padding: 10px 12px;
   border-radius: 14px;
@@ -1364,7 +1391,7 @@ body{ overflow-x: hidden; }
   overflow: hidden;
 }
 
-#panel-links .link-blurb::before{
+#panel-links > .section > .cards > .card p.tiny.muted::before{
   content:"";
   position:absolute;
   left: 12px;
@@ -1377,11 +1404,11 @@ body{ overflow-x: hidden; }
 
 @media (prefers-reduced-motion: reduce){
   #panel-links .link-item:hover,
-  #panel-links .link-card .copy-btn:hover{
+  #panel-links .copy-btn:hover{
     transform: none !important;
   }
   #panel-links .link-item::after,
-  #panel-links .link-card .copy-btn::after{
+  #panel-links .copy-btn::after{
     animation: none !important;
     opacity: 0 !important;
   }
