@@ -1203,112 +1203,189 @@ body{ overflow-x: hidden; }
 
 
 /* =========================================================
-   Links tab: translucent colored buttons (v2)
-   - every button gets a gentle tint (no gray pills)
-   - adjacent buttons vary slightly so nothing looks grouped/cheap
-   - still matches the site's ink + violet + teal vibe
+   Links tab: glass link buttons (v3)
+   Goals
+   - buttons are TRANSPARENT tinted glass (no solid neon slabs)
+   - every button has color (no gray pills)
+   - adjacent buttons vary slightly (auto hue rotation)
+   - the 3 helper blurbs look like intentional micro-cards again
    ========================================================= */
 
 #panel-links{
-  /* global knobs */
-  --lk-fill-a: .06;        /* color tint in the fill */
-  --lk-fill-b: .02;
-  --lk-border-a: .16;      /* border gradient strength */
-  --lk-border-b: .26;
-  --lk-glow: .05;          /* very subtle glow */
-  --lk-glow-hover: .18;
-  --lk-sheen-hover: .26;   /* sheen intensity on hover */
+  /* global knobs (real, direct — changing these ALWAYS changes visuals) */
+  --lk-tint: .018;      /* main tint (lower = more transparent) */         /* main color tint inside the button (make smaller = more transparent) */
+  --lk-tint2: .010;        /* secondary tint */
+  --lk-glass-top: .060;    /* white glass highlight */
+  --lk-glass-bot: .016;
+  --lk-border-a: .18;      /* border color strength */
+  --lk-border-b: .10;
+  --lk-glow: .020;         /* subtle aura (keep low for "not cheap") */
+  --lk-glow-hover: .050;
+  --lk-sheen-hover: .10;   /* sheen intensity on hover */
 }
 
-/* Give each card a slightly different base hue so the section feels alive */
-#panel-links > .section > .cards > .card:nth-child(1){ --hShift: 0; }     /* magenta/violet */
-#panel-links > .section > .cards > .card:nth-child(2){ --hShift: 312; }   /* indigo/cyan (wrap) */
+/* Give each card a slightly different hue family */
+#panel-links > .section > .cards > .card:nth-child(1){ --hShift: 0; }     /* violet/magenta */
+#panel-links > .section > .cards > .card:nth-child(2){ --hShift: 318; }   /* indigo/cyan (wrap) */
 #panel-links > .section > .cards > .card:nth-child(3){ --hShift: 252; }   /* teal/blue  (wrap) */
 
-/* Assign a hue per button (direct anchors in each list) */
-#panel-links .link-list > a.link-item:nth-of-type(6n+1){ --h: calc(312 + var(--hShift)); }
-#panel-links .link-list > a.link-item:nth-of-type(6n+2){ --h: calc(276 + var(--hShift)); }
-#panel-links .link-list > a.link-item:nth-of-type(6n+3){ --h: calc(246 + var(--hShift)); }
-#panel-links .link-list > a.link-item:nth-of-type(6n+4){ --h: calc(205 + var(--hShift)); }
-#panel-links .link-list > a.link-item:nth-of-type(6n+5){ --h: calc(178 + var(--hShift)); }
-#panel-links .link-list > a.link-item:nth-of-type(6n+6){ --h: calc(332 + var(--hShift)); }
+/* Hue rotation per button (direct anchors in each list) */
+#panel-links .link-list > a.link-item:nth-of-type(6n+1){ --h: calc(308 + var(--hShift)); }
+#panel-links .link-list > a.link-item:nth-of-type(6n+2){ --h: calc(278 + var(--hShift)); }
+#panel-links .link-list > a.link-item:nth-of-type(6n+3){ --h: calc(248 + var(--hShift)); }
+#panel-links .link-list > a.link-item:nth-of-type(6n+4){ --h: calc(210 + var(--hShift)); }
+#panel-links .link-list > a.link-item:nth-of-type(6n+5){ --h: calc(184 + var(--hShift)); }
+#panel-links .link-list > a.link-item:nth-of-type(6n+6){ --h: calc(334 + var(--hShift)); }
 
-/* Email rows also get color (the anchors are nested inside .link-row) */
+/* Email rows: set hue at the row level so link + copy inherit it */
 #panel-links > .section > .cards > .card:nth-child(1) .link-row:nth-child(1){ --h: 284; }
 #panel-links > .section > .cards > .card:nth-child(1) .link-row:nth-child(2){ --h: 246; }
 
-/* Shared button styling (applies to ALL link-item anchors) */
+/* Shared button styling (ALL anchors in Links tab) */
 #panel-links .link-item{
-  /* derived hues */
-  --h2: calc(var(--h, 276) + 30);
+  --h2: calc(var(--h, 276) + 26);
 
-  --fill1: hsla(var(--h), 95%, 70%, var(--lk-fill-a));
-  --fill2: hsla(var(--h2), 95%, 66%, calc(var(--lk-fill-a) - .07));
-
-  --border1: hsla(var(--h), 100%, 72%, var(--lk-border-a));
-  --border2: hsla(var(--h2), 100%, 70%, var(--lk-border-b));
+  /* derived colors */
+  --tint:  hsla(var(--h), 92%, 68%, var(--lk-tint));
+  --tint2: hsla(var(--h2), 92%, 64%, var(--lk-tint2));
+  --b1:    hsla(var(--h), 100%, 72%, var(--lk-border-a));
+  --b2:    hsla(var(--h2), 100%, 68%, var(--lk-border-b));
 
   border: 1px solid transparent !important;
 
-  /* transparent colored glass (NOT solid neon, NOT gray) */
+  /* Transparent tinted glass:
+     - first two layers are VERY light color tint (not a slab)
+     - third layer is the glass highlight
+     - last layer paints the gradient border */
   background:
-    radial-gradient(520px 180px at 14% 28%, var(--fill1), transparent 62%) padding-box,
-    radial-gradient(520px 180px at 86% 72%, var(--fill2), transparent 62%) padding-box,
-    linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.03)) padding-box,
-    linear-gradient(135deg, var(--border1), var(--border2)) border-box;
+    linear-gradient(180deg, var(--tint), var(--tint)) padding-box,
+    linear-gradient(180deg, var(--tint2), var(--tint2)) padding-box,
+    linear-gradient(180deg, rgba(255,255,255,var(--lk-glass-top)), rgba(255,255,255,var(--lk-glass-bot))) padding-box,
+    linear-gradient(135deg, var(--b1), var(--b2)) border-box !important;
 
-  box-shadow: 0 10px 28px rgba(0,0,0,.26);
-  filter: saturate(.90) brightness(1.02);
+  box-shadow: 0 10px 26px rgba(0,0,0,.24);
+  filter: saturate(.86) brightness(1.02);
+
+  /* make buttons feel "designed" */
+  position: relative;
+  overflow: hidden;
 }
 
 #panel-links .link-item:hover{
-  filter: saturate(1.04) brightness(1.06);
-  box-shadow: 0 14px 36px rgba(0,0,0,.32);
+  filter: saturate(.95) brightness(1.06);
+  box-shadow: 0 14px 34px rgba(0,0,0,.30);
 }
 
-/* ultra-subtle glow (kept low so nothing looks cheap) */
+/* subtle aura (kept low) */
 #panel-links .link-item::before{
   opacity: var(--lk-glow) !important;
   background:
-    radial-gradient(520px 180px at 18% 40%, var(--border1), transparent 62%),
-    radial-gradient(520px 180px at 82% 60%, var(--border2), transparent 62%);
+    radial-gradient(520px 180px at 22% 30%, var(--b1), transparent 62%),
+    radial-gradient(520px 180px at 78% 70%, var(--b2), transparent 62%);
   filter: blur(22px);
 }
 #panel-links .link-item:hover::before{ opacity: var(--lk-glow-hover) !important; }
 
-/* sheen/scanline stays but is gentler */
-#panel-links .link-item:hover::after{
-  opacity: var(--lk-sheen-hover) !important;
+/* sheen + micro-scanlines (adds a tech feel but stays subtle) */
+#panel-links .link-item::after,
+#panel-links .copy-btn::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: inherit;
+  pointer-events:none;
+  opacity: 0;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255,255,255,.16) 50%, transparent 100%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 16px);
+  transform: translateX(-140%) skewX(-22deg);
 }
 
-/* Copy buttons inherit the row hue (so they also aren't gray) */
-#panel-links .link-row{
-  --h2: calc(var(--h, 276) + 30);
+#panel-links .link-item:hover::after,
+#panel-links .copy-btn:hover::after{
+  opacity: var(--lk-sheen-hover) !important;
+  animation: lkSheenV3 .78s ease-out;
 }
+
+@keyframes lkSheenV3{
+  from{ transform: translateX(-140%) skewX(-22deg); }
+  to{ transform: translateX(140%) skewX(-22deg); }
+}
+
+/* sheen/scanline (gentle) */
+#panel-links .link-item:hover::after{ opacity: var(--lk-sheen-hover) !important; }
+
+/* Copy buttons: slightly different shade from the link next to it */
+#panel-links .link-row{ --h2: calc(var(--h, 276) + 26); }
 
 #panel-links .copy-btn{
+  --hc:  calc(var(--h, 276) + 12);
+  --hc2: calc(var(--hc) + 26);
+
   border: 1px solid transparent;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.03)) padding-box,
+    linear-gradient(180deg,
+      hsla(var(--hc), 92%, 68%, calc(var(--lk-tint) - .006)),
+      hsla(var(--hc), 92%, 68%, calc(var(--lk-tint) - .006))
+    ) padding-box,
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)) padding-box,
     linear-gradient(135deg,
-      hsla(var(--h, 276), 100%, 72%, .50),
-      hsla(var(--h2, 306), 100%, 70%, .38)
+      hsla(var(--hc), 100%, 72%, .36),
+      hsla(var(--hc2), 100%, 68%, .22)
     ) border-box;
-  box-shadow: 0 10px 26px rgba(0,0,0,.24);
+
+  box-shadow: 0 10px 24px rgba(0,0,0,.22);
+  filter: saturate(.86) brightness(1.02);
 }
 
 #panel-links .copy-btn:hover{
-  filter: saturate(1.05) brightness(1.06);
-  box-shadow: 0 14px 34px rgba(0,0,0,.30);
+  filter: saturate(.95) brightness(1.06);
+  box-shadow: 0 14px 32px rgba(0,0,0,.28);
 }
 
-/* Blurbs: keep subdued but slightly tinted per card */
+/* Helper blurbs: restore the "micro-card" feel and separation */
 #panel-links > .section > .cards > .card p.tiny.muted{
+  margin-top: 14px;
+  padding: 11px 12px;
+  border-radius: 14px;
   border: 1px solid rgba(255,255,255,.10);
   background:
-    radial-gradient(520px 180px at 12% 0%, hsla(var(--hShift, 0), 90%, 65%, .10), transparent 62%),
-    linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
+    linear-gradient(180deg, rgba(0,0,0,.22), rgba(0,0,0,.10));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 10px 24px rgba(0,0,0,.18);
+  position: relative;
+  overflow: hidden;
 }
+
+#panel-links > .section > .cards > .card p.tiny.muted::before{
+  content:"";
+  position:absolute;
+  left: 12px;
+  right: 12px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsla(calc(284 + var(--hShift, 0)), 100%, 72%, .55),
+    hsla(calc(246 + var(--hShift, 0)), 100%, 70%, .38),
+    transparent
+  );
+  opacity: .65;
+}
+
+#panel-links > .section > .cards > .card p.tiny.muted::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity: .20;
+  background:
+    radial-gradient(520px 180px at 20% 0%, hsla(calc(284 + var(--hShift, 0)), 90%, 65%, .10), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.045) 0 1px, transparent 1px 16px);
+}
+
 
 /* Motion: keep accessible */
 @media (prefers-reduced-motion: reduce){
