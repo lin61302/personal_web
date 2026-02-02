@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+__MACOSX/
+
+# Local servers / tooling
+*.log
+
+# OS/editor
+Thumbs.db
+.idea/
+.vscode/
