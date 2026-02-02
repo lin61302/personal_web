@@ -1256,7 +1256,7 @@ body{ overflow-x: hidden; }
   border: 1px solid transparent;
 
   background:
-    linear-gradient(180deg, rgba(255,255,255,.085), rgba(255,255,255,.03)) padding-box,
+    linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015)) padding-box,
     linear-gradient(135deg, var(--tone1), var(--tone2)) border-box;
 
   box-shadow: 0 14px 40px rgba(0,0,0,.34);
@@ -1289,7 +1289,7 @@ body{ overflow-x: hidden; }
   inset:-1px;
   border-radius: inherit;
   pointer-events:none;
-  opacity: 60;
+  opacity: .14;
   background:
     radial-gradient(520px 180px at 18% 40%, var(--tone1), transparent 62%),
     radial-gradient(520px 180px at 82% 60%, var(--tone2), transparent 62%);
@@ -1297,7 +1297,7 @@ body{ overflow-x: hidden; }
   transition: opacity .18s ease;
 }
 
-#panel-links .link-item:hover::before{ opacity: .38; }
+#panel-links .link-item:hover::before{ opacity: .22; }
 
 #panel-links .link-item::after{
   content:"";
@@ -1305,7 +1305,7 @@ body{ overflow-x: hidden; }
   inset:0;
   border-radius: inherit;
   pointer-events:none;
-  opacity:30;
+  opacity:.06;
   background:
     linear-gradient(120deg, transparent 0%, rgba(255,255,255,.18) 50%, transparent 100%),
     repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 14px);
@@ -1313,7 +1313,7 @@ body{ overflow-x: hidden; }
 }
 
 #panel-links .link-item:hover::after{
-  opacity: 1;
+  opacity: .35;
   animation: linkSheenLinks .78s ease-out;
 }
 
