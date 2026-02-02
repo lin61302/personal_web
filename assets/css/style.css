@@ -1211,11 +1211,11 @@ body{ overflow-x: hidden; }
 
 #panel-links{
   /* global knobs */
-  --lk-fill-a: .18;        /* color tint in the fill */
-  --lk-fill-b: .06;
-  --lk-border-a: .58;      /* border gradient strength */
-  --lk-border-b: .46;
-  --lk-glow: .10;          /* very subtle glow */
+  --lk-fill-a: .06;        /* color tint in the fill */
+  --lk-fill-b: .02;
+  --lk-border-a: .16;      /* border gradient strength */
+  --lk-border-b: .26;
+  --lk-glow: .05;          /* very subtle glow */
   --lk-glow-hover: .18;
   --lk-sheen-hover: .26;   /* sheen intensity on hover */
 }
