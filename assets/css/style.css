@@ -1210,8 +1210,8 @@ body{ overflow-x: hidden; }
 
 #panel-links{
   /* default tones (magenta → violet) */
-  --tone1: rgba(255,58,166,.82);
-  --tone2: rgba(124,92,255,.74);
+  --tone1: rgba(255,58,166,.55);
+  --tone2: rgba(124,92,255,.48);
 }
 
 /* Give each of the 3 link cards its own harmonious tone */
@@ -1220,12 +1220,12 @@ body{ overflow-x: hidden; }
   --tone2: rgba(124,92,255,.74);
 }
 #panel-links > .section > .cards > .card:nth-child(2){
-  --tone1: rgba(124,92,255,.84);
-  --tone2: rgba(73,242,194,.70);
+  --tone1: rgba(124,92,255,.55);
+  --tone2: rgba(73,242,194,.45);
 }
 #panel-links > .section > .cards > .card:nth-child(3){
-  --tone1: rgba(73,242,194,.78);
-  --tone2: rgba(124,92,255,.74);
+  --tone1: rgba(73,242,194,.50);
+  --tone2: rgba(124,92,255,.45);
 }
 
 /* Card micro accent line */
@@ -1256,7 +1256,7 @@ body{ overflow-x: hidden; }
   border: 1px solid transparent;
 
   background:
-    linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015)) padding-box,
+    linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.05)) padding-box,
     linear-gradient(135deg, var(--tone1), var(--tone2)) border-box;
 
   box-shadow: 0 14px 40px rgba(0,0,0,.34);
@@ -1305,7 +1305,7 @@ body{ overflow-x: hidden; }
   inset:0;
   border-radius: inherit;
   pointer-events:none;
-  opacity:.06;
+  opacity:.07;
   background:
     linear-gradient(120deg, transparent 0%, rgba(255,255,255,.18) 50%, transparent 100%),
     repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 14px);
