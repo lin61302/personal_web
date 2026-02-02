@@ -1413,3 +1413,54 @@ body{ overflow-x: hidden; }
     opacity: 0 !important;
   }
 }
+
+/* =========================================================
+   Mute the 4 loud gradient buttons (make BOX colors lighter)
+   Paste at VERY END of stylesheet
+   ========================================================= */
+
+/* LinkedIn (Contact card, 3rd button) */
+#panel-links > .section > .cards > .card:nth-child(1) .link-list > .link-item:nth-child(3){
+  --tone1: rgba(255,58,166,.34);
+  --tone2: rgba(124,92,255,.26);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06)) padding-box,
+    linear-gradient(135deg, var(--tone1), var(--tone2)) border-box !important;
+  filter: saturate(.82) brightness(.97);
+}
+
+/* GitHub (Code & models card, 1st button) */
+#panel-links > .section > .cards > .card:nth-child(2) .link-list > .link-item:nth-child(1){
+  --tone1: rgba(124,92,255,.32);
+  --tone2: rgba(73,242,194,.24);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06)) padding-box,
+    linear-gradient(135deg, var(--tone1), var(--tone2)) border-box !important;
+  filter: saturate(.82) brightness(.97);
+}
+
+/* PDRI + MLP (Lab card, 1st + 2nd buttons) */
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(1),
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(2){
+  --tone1: rgba(73,242,194,.26);
+  --tone2: rgba(124,92,255,.26);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06)) padding-box,
+    linear-gradient(135deg, var(--tone1), var(--tone2)) border-box !important;
+  filter: saturate(.82) brightness(.97);
+}
+
+/* Also weaken glow/sheens on JUST these four so they don't scream */
+#panel-links > .section > .cards > .card:nth-child(1) .link-list > .link-item:nth-child(3)::before,
+#panel-links > .section > .cards > .card:nth-child(2) .link-list > .link-item:nth-child(1)::before,
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(1)::before,
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(2)::before{
+  opacity: .10 !important;
+}
+#panel-links > .section > .cards > .card:nth-child(1) .link-list > .link-item:nth-child(3):hover::before,
+#panel-links > .section > .cards > .card:nth-child(2) .link-list > .link-item:nth-child(1):hover::before,
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(1):hover::before,
+#panel-links > .section > .cards > .card:nth-child(3) .link-list > .link-item:nth-child(2):hover::before{
+  opacity: .14 !important;
+}
+
