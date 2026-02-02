@@ -1289,7 +1289,7 @@ body{ overflow-x: hidden; }
   inset:-1px;
   border-radius: inherit;
   pointer-events:none;
-  opacity: 0;
+  opacity: 60;
   background:
     radial-gradient(520px 180px at 18% 40%, var(--tone1), transparent 62%),
     radial-gradient(520px 180px at 82% 60%, var(--tone2), transparent 62%);
@@ -1305,7 +1305,7 @@ body{ overflow-x: hidden; }
   inset:0;
   border-radius: inherit;
   pointer-events:none;
-  opacity:0;
+  opacity:30;
   background:
     linear-gradient(120deg, transparent 0%, rgba(255,255,255,.18) 50%, transparent 100%),
     repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 14px);
