@@ -1198,6 +1198,191 @@ body{ overflow-x: hidden; }
   transform: scale(var(--avatar-zoom));
   transform-origin: var(--avatar-x) var(--avatar-y);
 }
+/* =========================================================
+   Links tab: colorful buttons (techy + harmonious)
+   ========================================================= */
 
+#panel-links .link-card{
+  --tone1: rgba(255,58,166,.78);
+  --tone2: rgba(124,92,255,.70);
+}
 
+#panel-links .link-card.tone-cool{
+  --tone1: rgba(124,92,255,.78);
+  --tone2: rgba(73,242,194,.66);
+}
 
+#panel-links .link-card.tone-mint{
+  --tone1: rgba(73,242,194,.78);
+  --tone2: rgba(255,58,166,.58);
+}
+
+#panel-links .link-list{ gap: 12px; }
+
+#panel-links .link-item{
+  position: relative;
+  display: block;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.085), rgba(255,255,255,.03)) padding-box,
+    linear-gradient(135deg, var(--tone1), var(--tone2)) border-box;
+
+  box-shadow: 0 14px 40px rgba(0,0,0,.34);
+  backdrop-filter: blur(10px);
+  color: rgba(255,255,255,.92);
+  text-decoration: none;
+
+  /* Keep long tokens (emails/URLs) inside the button */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  min-width: 0;
+
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform .14s ease, box-shadow .14s ease, filter .14s ease;
+}
+
+#panel-links .link-item:hover{
+  transform: translateY(-1px);
+  filter: saturate(1.10);
+  box-shadow: 0 18px 58px rgba(0,0,0,.52);
+  text-decoration: none;
+}
+#panel-links .link-item:active{ transform: translateY(0); }
+
+#panel-links .link-item::before{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius: inherit;
+  pointer-events:none;
+  opacity: 0;
+  background:
+    radial-gradient(520px 180px at 18% 40%, var(--tone1), transparent 62%),
+    radial-gradient(520px 180px at 82% 60%, var(--tone2), transparent 62%);
+  filter: blur(18px);
+  transition: opacity .18s ease;
+}
+
+#panel-links .link-item:hover::before{ opacity: .38; }
+
+#panel-links .link-item::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: inherit;
+  pointer-events:none;
+  opacity:0;
+  background:
+    linear-gradient(120deg, transparent 0%, rgba(255,255,255,.18) 50%, transparent 100%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 14px);
+  transform: translateX(-140%) skewX(-22deg);
+}
+
+#panel-links .link-item:hover::after{
+  opacity: 1;
+  animation: linkSheen .78s ease-out;
+}
+
+@keyframes linkSheen{
+  from{ transform: translateX(-140%) skewX(-22deg); }
+  to{ transform: translateX(140%) skewX(-22deg); }
+}
+
+#panel-links .link-item:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(255,58,166,.20),
+    0 18px 60px rgba(0,0,0,.58);
+}
+
+#panel-links .link-item.tone-neutral{
+  --tone1: rgba(255,255,255,.22);
+  --tone2: rgba(255,255,255,.08);
+  filter: saturate(.96);
+}
+#panel-links .link-item.tone-accent{
+  --tone1: rgba(255,58,166,.82);
+  --tone2: rgba(124,92,255,.72);
+}
+#panel-links .link-item.tone-cool{
+  --tone1: rgba(124,92,255,.82);
+  --tone2: rgba(73,242,194,.70);
+}
+#panel-links .link-item.tone-mint{
+  --tone1: rgba(73,242,194,.82);
+  --tone2: rgba(124,92,255,.62);
+}
+
+/* Copy buttons match the link buttons */
+#panel-links .link-card .copy-btn{
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)) padding-box,
+    linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.06)) border-box;
+
+  box-shadow: 0 14px 38px rgba(0,0,0,.32);
+}
+
+#panel-links .link-card .copy-btn:hover{
+  border: 1px solid transparent;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03)) padding-box,
+    linear-gradient(135deg, var(--tone1), var(--tone2)) border-box;
+}
+
+#panel-links .link-card .copy-btn::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: inherit;
+  pointer-events:none;
+  opacity:0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,.18) 50%, transparent 100%);
+  transform: translateX(-140%) skewX(-22deg);
+}
+
+#panel-links .link-card .copy-btn:hover::after{
+  opacity: 1;
+  animation: linkSheen .78s ease-out;
+}
+
+/* Blurbs get a subtle tinted “callout” feel */
+#panel-links .link-blurb{
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
+  position: relative;
+  overflow: hidden;
+}
+
+#panel-links .link-blurb::before{
+  content:"";
+  position:absolute;
+  left: 12px;
+  right: 12px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--tone1), var(--tone2), transparent);
+  opacity: .58;
+}
+
+@media (prefers-reduced-motion: reduce){
+  #panel-links .link-item:hover,
+  #panel-links .link-card .copy-btn:hover{
+    transform: none !important;
+  }
+  #panel-links .link-item::after,
+  #panel-links .link-card .copy-btn::after{
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
