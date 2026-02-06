@@ -139,26 +139,53 @@
 
               <div class="hero-card-top">
                 <div>
-                  <div class="card-title">Build map</div>
-                  <div class="card-subtitle">A reusable workflow I apply across social‑impact domains.</div>
+                  <div class="card-title">Delivery map</div>
+                  <div class="card-subtitle">A decision‑grade pipeline from question → evidence → action.</div>
                 </div>
                 <div class="status-pill" title="Monitoring-grade: built for reliability under drift and noise">
                   <span class="pulse-dot" aria-hidden="true"></span>
                   monitoring‑grade
                 </div>
               </div>
-              <pre class="codeblock codeblock-mini hero-snippet" aria-label="Blueprint snippet">
-R&D: problem → measurement spec → KPIs → baselines → edge cases
-arch: connect → parse → contracts (schemas + versioned patches) → lineage
-K/R: embed → vector DB + knowledge index → hybrid retrieve (RAG)
-mdl: multi-task → calibrate/threshold → decisioning + uncertainty
-LLM: weak labels | rule synthesis | doc→schema | error triage
-ship: batch/stream → aggregates/features → API → dashboards + alerts
-SRE: eval CI → drift + DQ checks → telemetry → audit → canary/rollback
+              <div class="build-map" aria-label="Delivery map">
+                <div class="build-kicker">Purpose: convert messy signals into trustworthy decisions.</div>
 
-                
-                
-</pre>
+                <div class="build-row">
+                  <div class="build-step">01</div>
+                  <div class="build-core">
+                    <div class="build-title">Frame → measure</div>
+                    <div class="build-text">Define the decision, KPIs, and failure modes. Write a measurement spec.</div>
+                    <div class="build-out">Output: spec + evaluation plan</div>
+                  </div>
+                </div>
+
+                <div class="build-row">
+                  <div class="build-step">02</div>
+                  <div class="build-core">
+                    <div class="build-title">Ingest → normalize</div>
+                    <div class="build-text">Connect sources, clean + dedupe, and lock schemas with provenance.</div>
+                    <div class="build-out">Output: trusted corpus + lineage</div>
+                  </div>
+                </div>
+
+                <div class="build-row">
+                  <div class="build-step">03</div>
+                  <div class="build-core">
+                    <div class="build-title">Retrieve → model</div>
+                    <div class="build-text">Hybrid search + multi‑task models, calibrated for uncertainty.</div>
+                    <div class="build-out">Output: scored events + confidence</div>
+                  </div>
+                </div>
+
+                <div class="build-row">
+                  <div class="build-step">04</div>
+                  <div class="build-core">
+                    <div class="build-title">Deliver → monitor</div>
+                    <div class="build-text">Dashboards, alerts, and audits with drift‑aware QA.</div>
+                    <div class="build-out">Output: decision‑ready signals</div>
+                  </div>
+                </div>
+              </div>
 
 
               <div class="divider"></div>
