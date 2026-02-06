@@ -1430,26 +1430,27 @@ body{ overflow-x: hidden; }
   --h2: calc(var(--h, 276) + 26);
 
   /* derived colors */
-  --c1:    hsla(var(--h), 100%, 78%, .12);
-  --c2:    hsla(var(--h2), 100%, 72%, .10);
+  --c1:    hsla(var(--h), 100%, 78%, .08);
+  --c2:    hsla(var(--h2), 100%, 72%, .06);
   --b1:    hsla(var(--h), 100%, 80%, var(--lk-border-a));
   --b2:    hsla(var(--h2), 100%, 76%, var(--lk-border-b));
 
-  border: 1px solid rgba(255,255,255,.26) !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
 
   /* Glass + metal (more transparent, higher quality) */
   background:
-    linear-gradient(135deg, rgba(255,255,255,.16) 0%, var(--c1) 36%, var(--c2) 70%, rgba(255,255,255,.08) 100%),
-    linear-gradient(180deg, rgba(255,255,255,var(--lk-glass-top)), rgba(255,255,255,var(--lk-glass-bot))),
-    radial-gradient(220px 70px at 12% 0%, rgba(255,255,255,.30), transparent 70%),
-    radial-gradient(240px 120px at 90% 110%, hsla(var(--h), 100%, 70%, .10), transparent 60%);
+    linear-gradient(135deg, rgba(255,255,255,.08) 0%, var(--c1) 36%, var(--c2) 70%, rgba(255,255,255,.04) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+    radial-gradient(220px 70px at 12% 0%, rgba(255,255,255,.14), transparent 70%),
+    radial-gradient(240px 120px at 90% 110%, hsla(var(--h), 100%, 70%, .05), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.18));
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.45),
-    inset 0 -1px 0 rgba(8,12,24,.14),
-    0 10px 24px rgba(4,10,24,.16);
-  filter: saturate(0.96) brightness(0.98);
-  backdrop-filter: blur(14px) saturate(1.08);
+    inset 0 1px 0 rgba(255,255,255,.28),
+    inset 0 -1px 0 rgba(8,12,24,.16),
+    0 10px 24px rgba(4,10,24,.14);
+  filter: saturate(0.94) brightness(0.95);
+  backdrop-filter: blur(16px) saturate(1.04);
   text-shadow: 0 1px 2px rgba(6,10,20,.18);
 
   /* make buttons feel "designed" */
@@ -1459,7 +1460,7 @@ body{ overflow-x: hidden; }
 }
 
 #panel-links .link-item:hover{
-  filter: saturate(1.02) brightness(1.03);
+  filter: saturate(0.98) brightness(0.99);
   box-shadow: 0 14px 30px rgba(0,0,0,.26);
   transform: translateY(-1px);
 }
@@ -1511,23 +1512,24 @@ body{ overflow-x: hidden; }
   --hc:  calc(var(--h, 276) + 12);
   --hc2: calc(var(--hc) + 26);
 
-  border: 1px solid rgba(255,255,255,.24);
+  border: 1px solid rgba(255,255,255,.16);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.14) 0%, hsla(var(--hc), 100%, 76%, .12) 48%, rgba(255,255,255,.08) 100%),
-    linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.02)),
-    radial-gradient(200px 70px at 18% 0%, rgba(255,255,255,.26), transparent 70%);
+    linear-gradient(135deg, rgba(255,255,255,.08) 0%, hsla(var(--hc), 100%, 76%, .08) 48%, rgba(255,255,255,.04) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+    radial-gradient(200px 70px at 18% 0%, rgba(255,255,255,.12), transparent 70%),
+    linear-gradient(180deg, rgba(0,0,0,.10), rgba(0,0,0,.18));
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.42),
-    inset 0 -1px 0 rgba(8,12,24,.14),
-    0 8px 20px rgba(4,10,24,.14);
-  filter: saturate(0.95) brightness(0.98);
-  backdrop-filter: blur(14px) saturate(1.06);
+    inset 0 1px 0 rgba(255,255,255,.22),
+    inset 0 -1px 0 rgba(8,12,24,.16),
+    0 8px 20px rgba(4,10,24,.12);
+  filter: saturate(0.94) brightness(0.95);
+  backdrop-filter: blur(16px) saturate(1.02);
   transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
 }
 
 #panel-links .copy-btn:hover{
-  filter: saturate(1.00) brightness(1.03);
+  filter: saturate(0.98) brightness(0.99);
   box-shadow: 0 12px 26px rgba(0,0,0,.24);
   transform: translateY(-1px);
 }
