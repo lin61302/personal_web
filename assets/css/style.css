@@ -241,27 +241,42 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
   padding: 10px 14px;
   font-weight: 650;
   font-size: 13px;
-  border: 1px solid rgba(138,162,255,.28);
-  background: linear-gradient(180deg, rgba(12,20,40,.6), rgba(8,14,30,.35));
+  border: 1px solid rgba(180,198,255,.55);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.16), rgba(79,199,255,.22), rgba(255,255,255,.08)),
+    linear-gradient(0deg, rgba(255,255,255,.12), rgba(255,255,255,0) 55%);
   text-decoration:none;
   color: rgba(234,244,255,.92);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.45),
+    inset 0 -1px 0 rgba(8,12,24,.35),
+    0 10px 26px rgba(4,12,28,.28);
+  backdrop-filter: blur(6px);
 }
 .btn:hover{
   text-decoration:none;
-  border-color: rgba(79,199,255,.42);
-  background: linear-gradient(180deg, rgba(18,32,58,.7), rgba(10,18,36,.45));
+  border-color: rgba(79,199,255,.70);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.22), rgba(79,199,255,.28), rgba(255,255,255,.12)),
+    linear-gradient(0deg, rgba(255,255,255,.16), rgba(255,255,255,0) 55%);
 }
 .btn.primary{
-  border-color: rgba(57,243,201,.45);
-  background: linear-gradient(135deg, rgba(57,243,201,.24), rgba(79,199,255,.20), rgba(108,123,255,.16));
+  border-color: rgba(57,243,201,.70);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.22), rgba(57,243,201,.36), rgba(79,199,255,.28)),
+    linear-gradient(0deg, rgba(255,255,255,.18), rgba(255,255,255,0) 55%);
   color: rgba(240,255,255,.98);
-  box-shadow: 0 12px 30px rgba(4,12,28,.45), inset 0 1px 0 rgba(255,255,255,.15);
+  box-shadow:
+    0 12px 30px rgba(4,12,28,.35),
+    inset 0 1px 0 rgba(255,255,255,.45),
+    inset 0 -1px 0 rgba(8,12,24,.35);
 }
 .btn.ghost{
-  background: rgba(9,16,34,.28);
-  border-color: rgba(108,123,255,.32);
-  color: rgba(220,236,255,.88);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.12), rgba(108,123,255,.20), rgba(255,255,255,.06)),
+    linear-gradient(0deg, rgba(255,255,255,.10), rgba(255,255,255,0) 55%);
+  border-color: rgba(108,123,255,.55);
+  color: rgba(226,240,255,.92);
 }
 
 .meta-row{
@@ -463,15 +478,19 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
 .link-item{
   padding: 10px 12px;
   border-radius: 14px;
-  border: 1px solid rgba(108,123,255,.22);
-  background: linear-gradient(180deg, rgba(12,20,40,.45), rgba(8,14,30,.30));
+  border: 1px solid rgba(180,198,255,.45);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.14), rgba(79,199,255,.18), rgba(255,255,255,.06)),
+    linear-gradient(0deg, rgba(255,255,255,.10), rgba(255,255,255,0) 55%);
   overflow-wrap: anywhere;
   word-break: break-word;
   min-width: 0;
 }
 .link-item:hover{
-  border-color: rgba(79,199,255,.40);
-  background: linear-gradient(180deg, rgba(16,30,54,.55), rgba(10,18,36,.38));
+  border-color: rgba(79,199,255,.65);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.20), rgba(79,199,255,.24), rgba(255,255,255,.10)),
+    linear-gradient(0deg, rgba(255,255,255,.14), rgba(255,255,255,0) 55%);
   text-decoration:none;
 }
 
@@ -610,16 +629,20 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
   font-weight: 650;
   padding: 10px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(108,123,255,.24);
-  background: linear-gradient(180deg, rgba(12,20,40,.5), rgba(8,14,30,.35));
+  border: 1px solid rgba(180,198,255,.42);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.14), rgba(108,123,255,.20), rgba(255,255,255,.06)),
+    linear-gradient(0deg, rgba(255,255,255,.10), rgba(255,255,255,0) 55%);
   color: var(--text);
   cursor: pointer;
   transition: transform .12s ease, background .12s ease, border-color .12s ease;
 }
 .copy-btn:hover{
   transform: translateY(-1px);
-  background: linear-gradient(180deg, rgba(18,32,58,.6), rgba(10,18,36,.45));
-  border-color: rgba(79,199,255,.36);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.20), rgba(108,123,255,.26), rgba(255,255,255,.10)),
+    linear-gradient(0deg, rgba(255,255,255,.14), rgba(255,255,255,0) 55%);
+  border-color: rgba(79,199,255,.60);
 }
 .copy-btn:active{ transform: translateY(0); }
 
