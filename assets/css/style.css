@@ -241,43 +241,42 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
   padding: 10px 14px;
   font-weight: 650;
   font-size: 13px;
-  border: 1px solid rgba(255,255,255,.28);
+  border: 1px solid rgba(180,198,255,.55);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.16), rgba(79,199,255,.10), rgba(108,123,255,.10), rgba(255,255,255,.10)),
-    linear-gradient(0deg, rgba(255,255,255,.14), rgba(255,255,255,0) 60%);
+    linear-gradient(135deg, rgba(255,255,255,.16), rgba(79,199,255,.22), rgba(255,255,255,.08)),
+    linear-gradient(0deg, rgba(255,255,255,.12), rgba(255,255,255,0) 55%);
   text-decoration:none;
-  color: rgba(232,242,255,.94);
+  color: rgba(234,244,255,.92);
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.28),
-    inset 0 -1px 0 rgba(8,12,24,.20),
-    0 10px 26px rgba(4,12,28,.18);
-  backdrop-filter: blur(8px) saturate(1.05);
-  text-shadow: 0 1px 1px rgba(6,10,20,.18);
+    inset 0 1px 0 rgba(255,255,255,.45),
+    inset 0 -1px 0 rgba(8,12,24,.35),
+    0 10px 26px rgba(4,12,28,.28);
+  backdrop-filter: blur(6px);
 }
 .btn:hover{
   text-decoration:none;
-  border-color: rgba(255,255,255,.40);
+  border-color: rgba(79,199,255,.70);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.22), rgba(79,199,255,.14), rgba(108,123,255,.14), rgba(255,255,255,.16)),
-    linear-gradient(0deg, rgba(255,255,255,.20), rgba(255,255,255,0) 60%);
+    linear-gradient(135deg, rgba(255,255,255,.22), rgba(79,199,255,.28), rgba(255,255,255,.12)),
+    linear-gradient(0deg, rgba(255,255,255,.16), rgba(255,255,255,0) 55%);
 }
 .btn.primary{
-  border-color: rgba(79,199,255,.35);
+  border-color: rgba(57,243,201,.70);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.22), rgba(79,199,255,.18), rgba(108,123,255,.16), rgba(255,255,255,.12)),
-    linear-gradient(0deg, rgba(255,255,255,.22), rgba(255,255,255,0) 60%);
-  color: rgba(234,248,255,.96);
+    linear-gradient(135deg, rgba(255,255,255,.22), rgba(57,243,201,.36), rgba(79,199,255,.28)),
+    linear-gradient(0deg, rgba(255,255,255,.18), rgba(255,255,255,0) 55%);
+  color: rgba(240,255,255,.98);
   box-shadow:
-    0 12px 28px rgba(4,12,28,.22),
-    inset 0 1px 0 rgba(255,255,255,.38),
-    inset 0 -1px 0 rgba(8,12,24,.22);
+    0 12px 30px rgba(4,12,28,.35),
+    inset 0 1px 0 rgba(255,255,255,.45),
+    inset 0 -1px 0 rgba(8,12,24,.35);
 }
 .btn.ghost{
   background:
-    linear-gradient(135deg, rgba(255,255,255,.18), rgba(108,123,255,.12), rgba(255,255,255,.10)),
-    linear-gradient(0deg, rgba(255,255,255,.18), rgba(255,255,255,0) 60%);
-  border-color: rgba(255,255,255,.26);
-  color: rgba(226,238,255,.92);
+    linear-gradient(135deg, rgba(255,255,255,.12), rgba(108,123,255,.20), rgba(255,255,255,.06)),
+    linear-gradient(0deg, rgba(255,255,255,.10), rgba(255,255,255,0) 55%);
+  border-color: rgba(108,123,255,.55);
+  color: rgba(226,240,255,.92);
 }
 
 .meta-row{
@@ -479,23 +478,19 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
 .link-item{
   padding: 10px 12px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.58);
+  border: 1px solid rgba(180,198,255,.45);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.55), rgba(79,199,255,.24), rgba(108,123,255,.22), rgba(255,255,255,.22)),
-    linear-gradient(0deg, rgba(255,255,255,.48), rgba(255,255,255,0) 60%);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.75),
-    inset 0 -1px 0 rgba(8,12,24,.22),
-    0 12px 30px rgba(4,12,28,.18);
+    linear-gradient(135deg, rgba(255,255,255,.14), rgba(79,199,255,.18), rgba(255,255,255,.06)),
+    linear-gradient(0deg, rgba(255,255,255,.10), rgba(255,255,255,0) 55%);
   overflow-wrap: anywhere;
   word-break: break-word;
   min-width: 0;
 }
 .link-item:hover{
-  border-color: rgba(255,255,255,.85);
+  border-color: rgba(79,199,255,.65);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.66), rgba(79,199,255,.28), rgba(108,123,255,.26), rgba(255,255,255,.30)),
-    linear-gradient(0deg, rgba(255,255,255,.58), rgba(255,255,255,0) 60%);
+    linear-gradient(135deg, rgba(255,255,255,.20), rgba(79,199,255,.24), rgba(255,255,255,.10)),
+    linear-gradient(0deg, rgba(255,255,255,.14), rgba(255,255,255,0) 55%);
   text-decoration:none;
 }
 
@@ -634,14 +629,10 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
   font-weight: 650;
   padding: 10px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.55);
+  border: 1px solid rgba(180,198,255,.42);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.52), rgba(108,123,255,.26), rgba(255,255,255,.20)),
-    linear-gradient(0deg, rgba(255,255,255,.46), rgba(255,255,255,0) 60%);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.70),
-    inset 0 -1px 0 rgba(8,12,24,.22),
-    0 10px 26px rgba(4,12,28,.18);
+    linear-gradient(135deg, rgba(255,255,255,.14), rgba(108,123,255,.20), rgba(255,255,255,.06)),
+    linear-gradient(0deg, rgba(255,255,255,.10), rgba(255,255,255,0) 55%);
   color: var(--text);
   cursor: pointer;
   transition: transform .12s ease, background .12s ease, border-color .12s ease;
@@ -649,9 +640,9 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(255,255,255,.45
 .copy-btn:hover{
   transform: translateY(-1px);
   background:
-    linear-gradient(135deg, rgba(255,255,255,.64), rgba(108,123,255,.30), rgba(255,255,255,.30)),
-    linear-gradient(0deg, rgba(255,255,255,.58), rgba(255,255,255,0) 60%);
-  border-color: rgba(255,255,255,.82);
+    linear-gradient(135deg, rgba(255,255,255,.20), rgba(108,123,255,.26), rgba(255,255,255,.10)),
+    linear-gradient(0deg, rgba(255,255,255,.14), rgba(255,255,255,0) 55%);
+  border-color: rgba(79,199,255,.60);
 }
 .copy-btn:active{ transform: translateY(0); }
 
@@ -1374,15 +1365,15 @@ body{ overflow-x: hidden; }
 
 #panel-links{
   /* global knobs (real, direct — changing these ALWAYS changes visuals) */
-  --lk-tint: .018;      /* main tint (lower = more transparent) */         /* main color tint inside the button (make smaller = more transparent) */
-  --lk-tint2: .010;        /* secondary tint */
-  --lk-glass-top: .060;    /* white glass highlight */
-  --lk-glass-bot: .016;
-  --lk-border-a: .18;      /* border color strength */
-  --lk-border-b: .10;
-  --lk-glow: .020;         /* subtle aura (keep low for "not cheap") */
-  --lk-glow-hover: .050;
-  --lk-sheen-hover: .10;   /* sheen intensity on hover */
+  --lk-tint: .020;      /* main tint (lower = more transparent) */
+  --lk-tint2: .012;     /* secondary tint */
+  --lk-glass-top: .18;  /* white glass highlight */
+  --lk-glass-bot: .06;
+  --lk-border-a: .55;   /* border color strength */
+  --lk-border-b: .30;
+  --lk-glow: .030;      /* subtle aura (keep low for "not cheap") */
+  --lk-glow-hover: .060;
+  --lk-sheen-hover: .18; /* sheen intensity on hover */
 }
 
 /* Give each card a slightly different hue family */
@@ -1407,25 +1398,26 @@ body{ overflow-x: hidden; }
   --h2: calc(var(--h, 276) + 26);
 
   /* derived colors */
-  --tint:  hsla(var(--h), 92%, 68%, var(--lk-tint));
-  --tint2: hsla(var(--h2), 92%, 64%, var(--lk-tint2));
-  --b1:    hsla(var(--h), 100%, 72%, var(--lk-border-a));
-  --b2:    hsla(var(--h2), 100%, 68%, var(--lk-border-b));
+  --c1:    hsla(var(--h), 100%, 78%, .22);
+  --c2:    hsla(var(--h2), 100%, 72%, .20);
+  --b1:    hsla(var(--h), 100%, 80%, var(--lk-border-a));
+  --b2:    hsla(var(--h2), 100%, 76%, var(--lk-border-b));
 
-  border: 1px solid transparent !important;
+  border: 1px solid rgba(255,255,255,.56) !important;
 
-  /* Transparent tinted glass:
-     - first two layers are VERY light color tint (not a slab)
-     - third layer is the glass highlight
-     - last layer paints the gradient border */
+  /* Glass + metal (lighter, less slabby) */
   background:
-    linear-gradient(180deg, var(--tint), var(--tint)) padding-box,
-    linear-gradient(180deg, var(--tint2), var(--tint2)) padding-box,
-    linear-gradient(180deg, rgba(255,255,255,var(--lk-glass-top)), rgba(255,255,255,var(--lk-glass-bot))) padding-box,
-    linear-gradient(135deg, var(--b1), var(--b2)) border-box !important;
+    linear-gradient(135deg, rgba(255,255,255,.28) 0%, var(--c1) 36%, var(--c2) 70%, rgba(255,255,255,.18) 100%),
+    linear-gradient(0deg, rgba(255,255,255,.26), rgba(255,255,255,0) 62%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.10) 0 1px, transparent 1px 10px);
 
-  box-shadow: 0 10px 26px rgba(0,0,0,.24);
-  filter: saturate(.86) brightness(1.02);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.70),
+    inset 0 -1px 0 rgba(8,12,24,.20),
+    0 12px 28px rgba(4,10,24,.20);
+  filter: saturate(1.10) brightness(1.06);
+  backdrop-filter: blur(10px) saturate(1.3);
+  text-shadow: 0 1px 2px rgba(6,10,20,.25);
 
   /* make buttons feel "designed" */
   position: relative;
@@ -1433,8 +1425,8 @@ body{ overflow-x: hidden; }
 }
 
 #panel-links .link-item:hover{
-  filter: saturate(.95) brightness(1.06);
-  box-shadow: 0 14px 34px rgba(0,0,0,.30);
+  filter: saturate(1.18) brightness(1.10);
+  box-shadow: 0 16px 36px rgba(0,0,0,.28);
 }
 
 /* subtle aura (kept low) */
@@ -1483,25 +1475,23 @@ body{ overflow-x: hidden; }
   --hc:  calc(var(--h, 276) + 12);
   --hc2: calc(var(--hc) + 26);
 
-  border: 1px solid transparent;
+  border: 1px solid rgba(255,255,255,.56);
   background:
-    linear-gradient(180deg,
-      hsla(var(--hc), 92%, 68%, calc(var(--lk-tint) - .006)),
-      hsla(var(--hc), 92%, 68%, calc(var(--lk-tint) - .006))
-    ) padding-box,
-    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)) padding-box,
-    linear-gradient(135deg,
-      hsla(var(--hc), 100%, 72%, .36),
-      hsla(var(--hc2), 100%, 68%, .22)
-    ) border-box;
+    linear-gradient(135deg, rgba(255,255,255,.26) 0%, hsla(var(--hc), 100%, 76%, .20) 48%, rgba(255,255,255,.18) 100%),
+    linear-gradient(0deg, rgba(255,255,255,.22), rgba(255,255,255,0) 62%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.10) 0 1px, transparent 1px 10px);
 
-  box-shadow: 0 10px 24px rgba(0,0,0,.22);
-  filter: saturate(.86) brightness(1.02);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.66),
+    inset 0 -1px 0 rgba(8,12,24,.20),
+    0 10px 24px rgba(4,10,24,.18);
+  filter: saturate(1.06) brightness(1.04);
+  backdrop-filter: blur(10px) saturate(1.25);
 }
 
 #panel-links .copy-btn:hover{
-  filter: saturate(.95) brightness(1.06);
-  box-shadow: 0 14px 32px rgba(0,0,0,.28);
+  filter: saturate(1.16) brightness(1.10);
+  box-shadow: 0 14px 30px rgba(0,0,0,.26);
 }
 
 /* Helper blurbs: restore the "micro-card" feel and separation */
