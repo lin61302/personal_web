@@ -234,13 +234,13 @@ guardrails: drift tests + sampling QA + audit logs`;
     let last = 0;
     document.addEventListener('mousemove', (e) => {
       const now = performance.now();
-      if (now - last < 120) return;
+      if (now - last < 180) return;
       last = now;
 
       const dot = document.createElement('span');
       dot.className = 'spray-dot';
-      const dx = (Math.random() * 16) - 8;
-      const dy = (Math.random() * 16) - 8;
+      const dx = (Math.random() * 12) - 6;
+      const dy = (Math.random() * 12) - 6;
       dot.style.left = (e.clientX + dx) + 'px';
       dot.style.top = (e.clientY + dy) + 'px';
       document.body.appendChild(dot);
