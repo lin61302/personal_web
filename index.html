@@ -83,26 +83,18 @@
             </h1>
 
             <p class="lede">
-              Politics can feel like it’s moving faster than anyone can process. The headlines refresh before the context does.
-              In that kind of world, AI has turned into a weirdly reliable companion: an information hub when you need grounding,
-              and honestly, emotional support when the news won’t stop. Whether we like it or not, it’s also evolving faster than
-              it used to, which makes learning with it, and learning to live with it, more important than ever. It won’t solve everything,
-              but it can make it easier to stay oriented: collect the signal, check the evidence, and avoid getting pulled
-              around by the loudest narrative.
+              I build monitoring‑grade pipelines that turn multilingual media into evidence‑linked signals for civic space, foreign influence, and climate disruption.
             </p>
-            
+
             <p class="lede">
-              The space and the motivation are personal. I’ve seen and learned enough, domestically and internationally, to know how tragic, draining, 
-              and frankly difficult some realities can be to sit with. So the question becomes: what if the constructive side of tech power were used well? 
-              Countering erosion and polarization, widening awareness, and lowering the friction for people who want to engage. 
-              Exposure shapes what people notice and what they care about. So the aim here isn’t “cool AI.” It’s using the tools well.
+              Outputs ship as dashboards, forecasts, and working papers—backed by open artifacts on GitHub and Hugging Face.
             </p>
             
 
             <div class="hero-cta">
               <a class="btn primary" href="#deployments" data-jump="deployments">See deployed examples</a>
               <a class="btn ghost" href="https://pdri-devlab.upenn.edu/bio/zung-ru-lin/" target="_blank" rel="noopener">PDRI‑DevLab bio</a>
-              <a class="btn ghost" href="https://github.com/lin61302" target="_blank" rel="noopener me">GitHub</a>
+              <a class="btn ghost" href="https://github.com/zungru" target="_blank" rel="noopener me">GitHub</a>
               <a class="btn ghost" href="#links" data-jump="links">Contact</a>
             </div>
 
@@ -139,8 +131,8 @@
 
               <div class="hero-card-top">
                 <div>
-                  <div class="card-title">Delivery map</div>
-                  <div class="card-subtitle">A decision‑grade pipeline from question → evidence → action.</div>
+                  <div class="card-title">Outcome map</div>
+                  <div class="card-subtitle">Problem → method → result → evidence.</div>
                 </div>
                 <div class="status-pill" title="Monitoring-grade: built for reliability under drift and noise">
                   <span class="pulse-dot" aria-hidden="true"></span>
@@ -148,41 +140,41 @@
                 </div>
               </div>
               <div class="build-map" aria-label="Delivery map">
-                <div class="build-kicker">Purpose: convert messy signals into trustworthy decisions.</div>
+                <div class="build-kicker">Purpose: turn noisy data into accountable public‑interest insight.</div>
 
                 <div class="build-row">
                   <div class="build-step">01</div>
                   <div class="build-core">
-                    <div class="build-title">Frame → measure</div>
-                    <div class="build-text">Translate research questions into hypotheses, measurement plans, and evaluation design that hold up in academic and industry review.</div>
-                    <div class="build-out">Output: research protocol + eval rubric</div>
+                    <div class="build-title">Problem</div>
+                    <div class="build-text">High‑stakes decisions need verified signals from messy, multilingual sources.</div>
+                    <div class="build-out">Focus: civic risk, influence, climate disruption</div>
                   </div>
                 </div>
 
                 <div class="build-row">
                   <div class="build-step">02</div>
                   <div class="build-core">
-                    <div class="build-title">Ingest → normalize</div>
-                    <div class="build-text">Define source policy, collection cadence, and metadata; normalize formats so data can be reused across studies.</div>
-                    <div class="build-out">Output: source registry + clean schema</div>
+                    <div class="build-title">Method</div>
+                    <div class="build-text">Ingestion + normalization, retrieval‑grounded parsing, and actor‑action‑sentiment aggregation with eval attached.</div>
+                    <div class="build-out">Tools: geoparsing + subnational rollups</div>
                   </div>
                 </div>
 
                 <div class="build-row">
                   <div class="build-step">03</div>
                   <div class="build-core">
-                    <div class="build-title">Retrieve → model</div>
-                    <div class="build-text">Hybrid retrieval, classifier stacks, and Gen‑AI parsing; RAG with re‑ranking, attribution, and QA loops.</div>
-                    <div class="build-out">Output: labeled signals + traces</div>
+                    <div class="build-title">Result</div>
+                    <div class="build-text">Dashboards + forecasts that surface events, shifts, and uncertainty for partners.</div>
+                    <div class="build-out">Delivery: briefs + public tools</div>
                   </div>
                 </div>
 
                 <div class="build-row">
                   <div class="build-step">04</div>
                   <div class="build-core">
-                    <div class="build-title">Deliver → monitor</div>
-                    <div class="build-text">Translate results into briefs, dashboards, and plain‑language insights that partners can act on.</div>
-                    <div class="build-out">Output: clear insights + accountability</div>
+                    <div class="build-title">Evidence</div>
+                    <div class="build-text">Working papers (civic, RAI, geoparsing, MLEED, gov‑sentiment) + open code/demos.</div>
+                    <div class="build-out">Artifacts: GitHub + Hugging Face</div>
                   </div>
                 </div>
               </div>
@@ -248,6 +240,34 @@
           <div class="section-head">
             <h2><img class="h2-icon" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" loading="lazy" /> Deployments</h2>
             <p>A few papers and notes that reflect the research direction—kept brief and preview-only.</p>
+          </div>
+
+          <div class="section">
+            <div class="section-head small">
+              <h2>Flagship case studies</h2>
+              <p>Concrete systems that show the end‑to‑end approach.</p>
+            </div>
+            <div class="two-col">
+              <article class="card">
+                <h3>Civic space + government sentiment</h3>
+                <ul class="bullets">
+                  <li><strong>Problem:</strong> Detect shifts in civic space and how government sentiment shapes events.</li>
+                  <li><strong>Method:</strong> Multilingual ingestion, event extraction, actor/action/sentiment parsing, and evaluation‑attached pipelines.</li>
+                  <li><strong>Result:</strong> Dashboards and forecasts for protest, restriction, and advocacy signals.</li>
+                  <li><strong>Evidence:</strong> <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/civic-space-data-and-forecasts/overview/" target="_blank" rel="noopener">Overview</a> · <a class="link" href="https://huggingface.co/spaces/zungru/mlp-civic-dashboard" target="_blank" rel="noopener">Dashboard</a> · <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/civic-space-data-and-forecasts/forecasts/" target="_blank" rel="noopener">Forecasts</a></li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Foreign influence + climate disruption</h3>
+                <ul class="bullets">
+                  <li><strong>Problem:</strong> Track influence patterns and climate‑driven disruption with subnational resolution.</li>
+                  <li><strong>Method:</strong> Retrieval + classifier stacks, geoparsing, ADM1 reconciliation, and time‑series aggregation.</li>
+                  <li><strong>Result:</strong> RAI + MLEED dashboards with surge detection and comparative views.</li>
+                  <li><strong>Evidence:</strong> <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/rai/rai-overview/" target="_blank" rel="noopener">RAI Overview</a> · <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/environmental-event-and-tracking/overview/" target="_blank" rel="noopener">MLEED Overview</a> · <a class="link" href="https://huggingface.co/spaces/zungru/subnational-env-dashboard#disasters-combined-adm-1-2024-01-01-2024-12-31" target="_blank" rel="noopener">Subnational dashboard</a></li>
+                </ul>
+              </article>
+            </div>
           </div>
 
           <div class="two-col">
@@ -325,7 +345,7 @@
             <div class="card">
               <h3>Selected papers & technical notes</h3>
 
-              <p class="tiny muted">Previews only (first 2 pages) — to avoid circulating full drafts. Public versions are linked when available.</p>
+              <p class="tiny muted">Previews only (first 2 pages) — to avoid circulating full drafts. Public versions are linked when available. Working papers in progress include geoparsing, MLEED, and government‑sentiment aggregation.</p>
 
               <div class="paper-row">
                 <img class="paper-thumb" src="assets/images/paper_previews/modular-gated-attention.png" alt="Preview of first page: Modular Gated Attention" loading="lazy" />
@@ -441,7 +461,7 @@
             <article class="card">
               <h3>Code & models</h3>
               <div class="link-list">
-                <a class="link-item" href="https://github.com/lin61302" target="_blank" rel="noopener me">GitHub</a>
+                <a class="link-item" href="https://github.com/zungru" target="_blank" rel="noopener me">GitHub</a>
                 <a class="link-item" href="https://huggingface.co/zungru" target="_blank" rel="noopener me">Hugging Face</a>
               </div>
               <p class="tiny muted">Pipelines, experiments, and artifacts that support monitoring‑grade AI systems.</p>
