@@ -158,6 +158,47 @@ guardrails: drift tests + sampling QA + audit logs`;
     btn.addEventListener('click', () => setDiagram(btn.getAttribute('data-diagram') || 'generic'));
   });
 
+  // Outcome map toggle (conceptual vs deployed)
+  const mapEl = document.querySelector('.build-map');
+  const mapBtns = Array.from(document.querySelectorAll('.seg-btn[data-map]'));
+
+  function setOutcomeMap(mode) {
+    if (!mapEl) return;
+
+    const kicker = mapEl.querySelector('.build-kicker');
+    const kickerText = mapEl.getAttribute(`data-${mode}-kicker`);
+    if (kicker && kickerText) kicker.textContent = kickerText;
+
+    mapEl.querySelectorAll('.build-row').forEach((row) => {
+      const title = row.querySelector('.build-title');
+      const text = row.querySelector('.build-text');
+      const out = row.querySelector('.build-out');
+
+      const t = row.getAttribute(`data-${mode}-title`);
+      const tx = row.getAttribute(`data-${mode}-text`);
+      const o = row.getAttribute(`data-${mode}-out`);
+
+      if (title && t) title.textContent = t;
+      if (text && tx) text.textContent = tx;
+      if (out && o) out.textContent = o;
+    });
+
+    mapBtns.forEach((b) => {
+      const active = b.getAttribute('data-map') === mode;
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+  }
+
+  mapBtns.forEach((btn) => {
+    btn.addEventListener('click', () => setOutcomeMap(btn.getAttribute('data-map') || 'conceptual'));
+  });
+
+  if (mapEl && mapBtns.length){
+    const initial = mapBtns.find(b => b.classList.contains('active'))?.getAttribute('data-map') || 'conceptual';
+    setOutcomeMap(initial);
+  }
+
   // Pointer-follow glow (sets CSS vars used by .glow-follow::before)
   const followEls = Array.from(document.querySelectorAll('.glow-follow'));
   followEls.forEach((el) => {

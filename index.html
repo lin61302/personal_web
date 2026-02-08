@@ -143,10 +143,14 @@
                   monitoring‑grade
                 </div>
               </div>
-              <div class="build-map" aria-label="Delivery map">
+              <div class="segmented map-toggle" role="tablist" aria-label="Outcome map view">
+                <button class="seg-btn active" data-map="conceptual" aria-selected="true">Conceptual</button>
+                <button class="seg-btn" data-map="deployed" aria-selected="false">Deployed</button>
+              </div>
+              <div class="build-map" aria-label="Outcome map" data-concept-kicker="Purpose: turn noisy data into accountable public‑interest insight." data-deployed-kicker="Purpose: connect deployed systems to traceable evidence.">
                 <div class="build-kicker">Purpose: turn noisy data into accountable public‑interest insight.</div>
 
-                <div class="build-row">
+                <div class="build-row" data-concept-title="Problem" data-concept-text="High‑stakes decisions need verified signals from noisy, multilingual sources." data-concept-out="Scope: public‑interest monitoring + applied research" data-deployed-title="Scope" data-deployed-text="Civic space, foreign influence, climate disruption, and government‑sentiment signals from multilingual media." data-deployed-out="Coverage: events • actors • sentiment">
                   <div class="build-step">01</div>
                   <div class="build-core">
                     <div class="build-title">Problem</div>
@@ -155,7 +159,7 @@
                   </div>
                 </div>
 
-                <div class="build-row">
+                <div class="build-row" data-concept-title="Method" data-concept-text="Data collection + normalization, rigorous classifier training/deployment, NER + entity linking, Gen‑AI parsing, and retrieval‑grounded workflows." data-concept-out="Tools: geoparsing • QA/eval • monitoring" data-deployed-title="Method" data-deployed-text="Ingestion + normalization, classifier stacks, NER/entity linking, Gen‑AI parsing, actor/action/sentiment aggregation, and geoparsing with ADM1 rollups." data-deployed-out="Infra: eval CI • drift checks • QA">
                   <div class="build-step">02</div>
                   <div class="build-core">
                     <div class="build-title">Method</div>
@@ -164,7 +168,7 @@
                   </div>
                 </div>
 
-                <div class="build-row">
+                <div class="build-row" data-concept-title="Result" data-concept-text="Dashboards, APIs, and briefs that surface events, shifts, and uncertainty for partners and the public." data-concept-out="Delivery: funder‑facing + public‑facing" data-deployed-title="Result" data-deployed-text="Dashboards, forecasts, and APIs for partners, funders, and public audiences." data-deployed-out="Delivery: briefs • alerts • public tools">
                   <div class="build-step">03</div>
                   <div class="build-core">
                     <div class="build-title">Result</div>
@@ -173,7 +177,7 @@
                   </div>
                 </div>
 
-                <div class="build-row">
+                <div class="build-row" data-concept-title="Evidence" data-concept-text="Research papers, working papers, and open artifacts that document methods and results." data-concept-out="Artifacts: GitHub • Hugging Face" data-deployed-title="Evidence" data-deployed-text="Working papers (civic, RAI, geoparsing, MLEED, gov‑sentiment) + open code and demos." data-deployed-out="Artifacts: GitHub • Hugging Face">
                   <div class="build-step">04</div>
                   <div class="build-core">
                     <div class="build-title">Evidence</div>
@@ -244,34 +248,6 @@
           <div class="section-head">
             <h2><img class="h2-icon" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" loading="lazy" /> Deployments</h2>
             <p>A few papers and notes that reflect the research direction—kept brief and preview-only.</p>
-          </div>
-
-          <div class="section">
-            <div class="section-head small">
-              <h2>Flagship case studies</h2>
-              <p>Concrete systems that show the end‑to‑end approach.</p>
-            </div>
-            <div class="two-col">
-              <article class="card">
-                <h3>Civic space + government sentiment</h3>
-                <ul class="bullets">
-                  <li><strong>Problem:</strong> Detect shifts in civic space and how government sentiment shapes events.</li>
-                  <li><strong>Method:</strong> Multilingual ingestion, event extraction, actor/action/sentiment parsing, and evaluation‑attached pipelines.</li>
-                  <li><strong>Result:</strong> Dashboards and forecasts for protest, restriction, and advocacy signals.</li>
-                  <li><strong>Evidence:</strong> <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/civic-space-data-and-forecasts/overview/" target="_blank" rel="noopener">Overview</a> · <a class="link" href="https://huggingface.co/spaces/zungru/mlp-civic-dashboard" target="_blank" rel="noopener">Dashboard</a> · <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/civic-space-data-and-forecasts/forecasts/" target="_blank" rel="noopener">Forecasts</a></li>
-                </ul>
-              </article>
-
-              <article class="card">
-                <h3>Foreign influence + climate disruption</h3>
-                <ul class="bullets">
-                  <li><strong>Problem:</strong> Track influence patterns and climate‑driven disruption with subnational resolution.</li>
-                  <li><strong>Method:</strong> Retrieval + classifier stacks, geoparsing, ADM1 reconciliation, and time‑series aggregation.</li>
-                  <li><strong>Result:</strong> RAI + MLEED dashboards with surge detection and comparative views.</li>
-                  <li><strong>Evidence:</strong> <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/rai/rai-overview/" target="_blank" rel="noopener">RAI Overview</a> · <a class="link" href="https://web.sas.upenn.edu/mlp-devlab/environmental-event-and-tracking/overview/" target="_blank" rel="noopener">MLEED Overview</a> · <a class="link" href="https://huggingface.co/spaces/zungru/subnational-env-dashboard#disasters-combined-adm-1-2024-01-01-2024-12-31" target="_blank" rel="noopener">Subnational dashboard</a></li>
-                </ul>
-              </article>
-            </div>
           </div>
 
           <div class="two-col">
