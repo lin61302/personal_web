@@ -191,7 +191,11 @@ guardrails: drift tests + sampling QA + audit logs`;
   }
 
   mapBtns.forEach((btn) => {
-    btn.addEventListener('click', () => setOutcomeMap(btn.getAttribute('data-map') || 'conceptual'));
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setOutcomeMap(btn.getAttribute('data-map') || 'conceptual');
+    });
   });
 
   if (mapEl && mapBtns.length){
