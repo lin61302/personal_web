@@ -9,3 +9,7 @@ __MACOSX/
 Thumbs.db
 .idea/
 .vscode/
+
+# Source photos; the browser-ready JPEGs are published
+assets/images/*.heic
+assets/images/*.HEIC

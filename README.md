@@ -13,6 +13,7 @@ Production: https://personal-web-or2.pages.dev
 
 - `assets/images/projects/`: civic, foreign-influence, and environmental illustrations.
 - `assets/images/research/`: conceptual method previews; these are not plots of research results.
+- `assets/images/penn-speaking.jpg` and `penn-grad.jpg`: web photos; crop positioning is set in CSS. Original HEIC source files stay local.
 
 Keep unpublished research labeled as ongoing or in preparation. The dashboard measures describe collected news coverage. Local PDFs are short manuscript excerpts; link to public papers or repositories when available.
 
@@ -27,6 +28,8 @@ python3 -m http.server 8080 --bind 127.0.0.1
 Open http://127.0.0.1:8080 and stop the server with Ctrl+C.
 
 Check Work, Research, and About at desktop and phone widths. Navigation supports arrows, Home, End, Enter, and Space; browser back/forward restores the selected tab. Existing `#overview`, `#deployments`, and `#links` links continue to work. Without JavaScript, all sections remain readable and anchor navigation works.
+
+The headline rotates gently while Work is visible. Visitors can pause it, and reduced-motion preferences keep it static. The photo and illustration hover effects also respect that preference.
 
 ## Deploy
 
