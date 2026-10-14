@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" fill="none">
+  <title>Local, global, and memory routes into a shared representation</title>
+  <rect width="360" height="210" rx="4" fill="#f7f6f2"/>
+  <g stroke="#dfe2d7" stroke-width=".6"><path d="M24 42h312M24 179h312M24 76h312M24 110h312M24 144h312M82 42v137M140 42v137M198 42v137M256 42v137M314 42v137"/></g>
+  <g fill="#35604b" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.4"><text x="24" y="27">MULTISCALE REPRESENTATION</text><text x="25" y="197">LOCAL / GLOBAL / MEMORY</text></g>
+  <g stroke="#35604b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="36" y="57" width="61" height="25" rx="3" fill="#f7f6f2"/>
+    <rect x="36" y="98" width="61" height="25" rx="3" fill="#e7ebdf"/>
+    <rect x="36" y="139" width="61" height="25" rx="3" fill="#f7f6f2"/>
+    <path d="M97 69h27l29 41m-56 0h56m-56 41h27l29-41"/>
+    <path d="m150 106 5 4-5 4"/>
+    <circle cx="175" cy="110" r="20" fill="#d8d9bc"/>
+    <path d="M195 110h36m-5-4 5 4-5 4"/>
+    <rect x="244" y="74" width="66" height="72" rx="3" fill="#f7f6f2"/>
+    <path d="M255 84h43m-43 12h43m-43 12h43m-43 12h43m-43 12h43" stroke="#9ca77d"/>
+    <path d="M269 84v48m14-48v48" stroke="#9ca77d"/>
+    <path d="m168 104 7 6-7 6m10-12 7 6-7 6"/>
+  </g>
+  <g fill="#292b27" font-family="Arial, sans-serif" font-size="9"><text x="49" y="73">LOCAL</text><text x="45" y="114">GLOBAL</text><text x="43" y="155">MEMORY</text><text x="162" y="145">mix</text><text x="252" y="162">representation</text></g>
+  <circle cx="310" cy="60" r="3" fill="#ba795c"/>
+</svg>

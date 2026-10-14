@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <title>Making pour-over coffee</title>
+  <g stroke="#292b27" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 48h34l-12 19H43z" fill="#f7f6f2"/>
+    <ellipse cx="48" cy="48" rx="17" ry="5" fill="#d8d9bc"/>
+    <path d="m37 53 8 10m6 0 8-10" stroke="#9ca77d" stroke-width="1.2"/>
+    <path d="M37 68h23l5 17c.5 2-1 4-3 4H35c-2 0-3.5-2-3-4z" fill="#f7f6f2"/>
+    <path d="M35 78h27l2 7c.3 1.2-.4 2-2 2H35c-1.4 0-2.2-.8-2-2z" fill="#ba795c" stroke="none"/>
+    <path d="M60 73h5c9 0 9 11 0 11h-1"/>
+    <path d="M39 74h19m-16-7h12" stroke="#35604b"/>
+    <path d="M27 25c0-6 4-10 10-10h12c6 0 9 4 9 10v9H27z" fill="#d8d9bc"/>
+    <path d="M37 15v-4h10v4m11 10 11 3 8-8m-50 2h-5c-8 0-8 10 0 10h5" stroke="#35604b"/>
+    <path d="M77 24c-2 9-10 12-17 16l-8 4" stroke="#9ca77d" stroke-width="1.3"/>
+    <path d="M72 35c-2 4-5 6-9 8" stroke="#9ca77d" stroke-width="1.3"/>
+    <path d="M26 92h46" stroke="#9ca77d"/>
+  </g>
+</svg>

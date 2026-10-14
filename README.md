@@ -6,10 +6,13 @@ Production: https://personal-web-or2.pages.dev
 
 ## Edit
 
-- `index.html`: introduction, project links, research summaries, and contact details.
+- `index.html`: introduction, tool links, six featured research projects, three collaborations, and contact details.
 - `assets/css/style.css`: typography, colors, and responsive layouts.
 - `assets/js/main.js`: tab navigation, browser history, keyboard controls, and email copying.
-- `assets/images/personal/`: original boba, Taipei 101, tea-egg, and tea illustrations.
+- `assets/images/personal/`: original drink illustrations, with earlier personal motifs retained.
+
+- `assets/images/projects/`: civic, foreign-influence, and environmental illustrations.
+- `assets/images/research/`: conceptual method previews; these are not plots of research results.
 
 Keep unpublished research labeled as ongoing or in preparation. The dashboard measures describe collected news coverage. Local PDFs are short manuscript excerpts; link to public papers or repositories when available.
 

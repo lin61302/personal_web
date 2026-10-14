@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none">
+  <title>Diplomatic and commercial connections across the globe</title>
+  <g stroke="#9ca77d" stroke-width="1.3" stroke-linecap="round">
+    <path d="m32 28 12 13m34 0 17-17m-54 37-18 12m57-10 13 13"/>
+    <path d="M30 28c20-18 43-18 65-4m-2 52c-20 16-46 16-70-3" stroke-dasharray="2 5"/>
+  </g>
+  <g stroke="#35604b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="61" cy="52" r="24" fill="#f7f6f2"/>
+    <ellipse cx="61" cy="52" rx="10" ry="24"/>
+    <path d="M38 46h46m-46 12h46m-23-30v48"/>
+    <path d="M15 17h25v17H15zm5 0v-5h15v5m-20 7h25m-14-1v4h3v-4" fill="#d8d9bc" stroke="#292b27"/>
+    <path d="M89 12h20v22H89zm-3 22h26m-19-16h3m6 0h3m-12 6h3m6 0h3m-9 10v-5h6v5" fill="#f7f6f2" stroke="#292b27"/>
+    <circle cx="19" cy="78" r="8" fill="#e8d7bc"/>
+    <path d="M12 89c0-4 3-6 7-6s7 2 7 6" stroke="#292b27"/>
+    <path d="M90 76h17v13H90zm4 0v-4h9v4m-13 6h17" fill="#e8d7bc" stroke="#292b27"/>
+  </g>
+</svg>

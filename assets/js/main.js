@@ -7,7 +7,8 @@
   const names = new Set(panels.map(panel => panel.dataset.panel));
   const hashTab = () => {
     const hash = window.location.hash.slice(1);
-    return names.has(hash) ? hash : aliases[hash] || 'work';
+    const parentPanel = document.getElementById(hash)?.closest('[data-panel]')?.dataset.panel;
+    return names.has(hash) ? hash : aliases[hash] || parentPanel || 'work';
   };
 
   nav.setAttribute('role', 'tablist');
@@ -69,11 +70,19 @@
 
   const syncHistory = () => {
     const hash = window.location.hash.slice(1);
-    if (!hash || names.has(hash) || aliases[hash]) activate(hashTab(), { scroll: true });
+    const target = document.getElementById(hash);
+    if (!hash || names.has(hash) || aliases[hash]) {
+      activate(hashTab(), { scroll: true });
+    } else if (target?.closest('[data-panel]')) {
+      activate(hashTab());
+      target.scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
   };
   window.addEventListener('popstate', syncHistory);
   window.addEventListener('hashchange', syncHistory);
   activate(hashTab());
+  const initialTarget = document.getElementById(window.location.hash.slice(1));
+  if (initialTarget?.closest('[data-panel]') && !names.has(initialTarget.id)) initialTarget.scrollIntoView({ behavior: 'instant', block: 'start' });
   document.getElementById('year').textContent = new Date().getFullYear();
 
   const copyButton = document.querySelector('[data-copy]');

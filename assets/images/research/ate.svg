@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" fill="none">
+  <title>A conceptual comparison of treatment and control outcomes</title>
+  <rect width="360" height="210" rx="4" fill="#eef0e7"/>
+  <g stroke="#d8dece" stroke-width=".6"><path d="M24 42h312M24 179h312M24 76h312M24 110h312M24 144h312M82 42v137M140 42v137M198 42v137M256 42v137M314 42v137"/></g>
+  <g fill="#35604b" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.4"><text x="24" y="27">CAUSAL EFFECT ESTIMATION</text><text x="24" y="197">A COMPARISON OF POTENTIAL OUTCOMES</text></g>
+  <g stroke="#35604b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="34" y="64" width="94" height="99" rx="3" fill="#f7f6f2"/>
+    <rect x="153" y="64" width="94" height="99" rx="3" fill="#f7f6f2"/>
+    <path d="M44 92h74m45 0h74" stroke="#d8dece"/>
+    <circle cx="60" cy="113" r="5" fill="#d8d9bc"/><circle cx="82" cy="113" r="5" fill="#d8d9bc"/><circle cx="104" cy="113" r="5" fill="#d8d9bc"/>
+    <circle cx="179" cy="113" r="5"/><circle cx="201" cy="113" r="5"/><circle cx="223" cy="113" r="5"/>
+    <path d="M81 121v12m119-12v12m-72-9h25" stroke-dasharray="2 4"/>
+    <path d="M247 113h18m-5-4 5 4-5 4"/>
+    <circle cx="294" cy="113" r="24" fill="#d8d9bc"/>
+  </g>
+  <g fill="#292b27" font-family="Arial, sans-serif" font-size="9"><text x="45" y="81">TREATMENT</text><text x="171" y="81">CONTROL</text><text x="70" y="149">Y(1)</text><text x="190" y="149">Y(0)</text><text x="280" y="154">effect</text></g>
+  <text x="285" y="120" fill="#35604b" font-family="Georgia, serif" font-size="25">Δ</text>
+</svg>

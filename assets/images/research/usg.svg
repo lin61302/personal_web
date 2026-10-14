@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" fill="none">
+  <title>A conceptual relationship between aid, policy, and reputation</title>
+  <rect width="360" height="210" rx="4" fill="#f7f6f2"/>
+  <g stroke="#dfe2d7" stroke-width=".6"><path d="M24 42h312M24 179h312M24 76h312M24 110h312M24 144h312M82 42v137M140 42v137M198 42v137M256 42v137M314 42v137"/></g>
+  <g fill="#35604b" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.4"><text x="24" y="27">POLICY AND NEWS PORTRAYALS</text><text x="24" y="197">AID / POLICY / REPUTATION</text></g>
+  <g stroke="#35604b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="70" cy="104" r="31" fill="#e7ebdf"/>
+    <circle cx="180" cy="104" r="31" fill="#f7f6f2"/>
+    <circle cx="290" cy="104" r="31" fill="#e7ebdf"/>
+    <path d="M101 104h43m-5-4 5 4-5 4m72 0h43m-5-4 5 4-5 4"/>
+    <path d="M55 95h30v23H55zm0 0 15-9 15 9m-15 0v23m-15-13h30" fill="#f7f6f2"/>
+    <path d="M166 88h28v33h-28zm6 8h16m-16 7h16m-16 7h10"/>
+    <path d="M277 90h26a4 4 0 0 1 4 4v15a4 4 0 0 1-4 4h-12l-9 7v-7h-5a4 4 0 0 1-4-4V94a4 4 0 0 1 4-4Z" fill="#f7f6f2"/>
+    <path d="M281 99h18m-18 7h12" stroke="#9ca77d"/>
+    <path d="M290 144c-44 25-111 25-155 0m3-1-3 1 1 4" stroke="#9ca77d" stroke-dasharray="2 4"/>
+  </g>
+  <g fill="#292b27" font-family="Arial, sans-serif" font-size="9"><text x="62" y="152">AID</text><text x="163" y="152">POLICY</text><text x="259" y="152">REPUTATION</text></g>
+  <circle cx="180" cy="58" r="3" fill="#ba795c"/>
+</svg>

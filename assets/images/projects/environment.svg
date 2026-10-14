@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none">
+  <title>A landscape with rain, water, and a resilient home</title>
+  <g stroke="#292b27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 69c11-11 21-17 32-13 10 4 19 3 27-6 10-11 21-6 32 1v30H15Z" fill="#d8d9bc" stroke="none"/>
+    <path d="M12 68c13-11 24-15 34-11m31-8c12-9 20-5 30 2" stroke="#9ca77d"/>
+    <path d="M49 51 65 36l16 15m-29-2v25h26V49" fill="#f7f6f2" stroke="#35604b"/>
+    <path d="M61 74V60h9v14m-12-20h4m8 0h4" stroke="#35604b"/>
+    <path d="M49 77h31m-27 0v5m23-5v5" stroke="#35604b"/>
+    <path d="M12 85c12-4 16 4 28 0s16 4 28 0 16 4 28 0 11 0 14 0m-94 7c10-3 17 3 27 0s17 3 27 0 17 3 28 0" stroke="#35604b"/>
+    <path d="M17 24c0-5 4-9 9-9 3-8 16-9 21 0 8-1 12 4 11 9Z" fill="#f7f6f2" stroke="#9ca77d"/>
+    <path d="m24 32-3 6m14-6-3 6m14-6-3 6" stroke="#9ca77d"/>
+    <path d="M91 68c-2-10 2-18 13-21 2 10-2 18-13 21Z" fill="#f7f6f2" stroke="#35604b"/>
+    <path d="m89 73 11-20" stroke="#35604b"/>
+  </g>
+</svg>

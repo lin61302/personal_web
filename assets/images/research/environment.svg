@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" fill="none">
+  <title>Conceptual environmental hazard and social response signals over time</title>
+  <rect width="360" height="210" rx="4" fill="#eef0e7"/>
+  <g stroke="#d8dece" stroke-width=".6"><path d="M24 42h312M24 179h312M24 76h312M24 110h312M24 144h312M82 42v137M140 42v137M198 42v137M256 42v137M314 42v137"/></g>
+  <g fill="#35604b" font-family="Arial, sans-serif" font-size="9" letter-spacing="1.4"><text x="24" y="27">ENVIRONMENT AND SOCIAL RESPONSE</text><text x="24" y="197">READING SIGNALS IN CONTEXT</text></g>
+  <rect x="116" y="56" width="207" height="108" rx="3" fill="#f7f6f2"/>
+  <rect x="199" y="56" width="28" height="108" fill="#e7ebdf"/>
+  <g stroke="#d8dece" stroke-width=".8"><path d="M126 78h187m-187 32h187m-187 32h187M153 62v96m33-96v96m55-96v96m33-96v96"/></g>
+  <g stroke="#35604b" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m126 78 16-2 15 4 17-2 18-1 13-13 12 6 14 8 17-1 18 2 20-2 17 1"/>
+    <path d="m126 110 20-1 23 2 19-2 18 1 14-7 12-4 15 4 17 7 18-2 31 2" stroke="#9ca77d"/>
+    <path d="m126 142 33-1 27 2 25-1 15-1 15-8 14-3 14 5 14 6 30 1" stroke="#ba795c"/>
+    <path d="M126 169h187m-4-3 4 3-4 3" stroke="#9ca77d"/>
+  </g>
+  <g fill="#292b27" font-family="Arial, sans-serif" font-size="9"><text x="34" y="81">HAZARD</text><text x="34" y="113">CONTEXT</text><text x="34" y="145">RESPONSE</text><text x="284" y="181" font-size="8">time</text></g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none">
+  <title>Civic dialogue and collective participation</title>
+  <g stroke="#292b27" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 15h37a6 6 0 0 1 6 6v16a6 6 0 0 1-6 6H59l-10 8v-8h-7a6 6 0 0 1-6-6V21a6 6 0 0 1 6-6Z" fill="#f7f6f2"/>
+    <path d="M47 25h25m-25 8h17" stroke="#9ca77d"/>
+    <circle cx="30" cy="61" r="7" fill="#e8d7bc"/>
+    <circle cx="64" cy="63" r="7" fill="#d8d9bc"/>
+    <path d="M17 88c0-10 4-17 13-17s14 7 14 17m7 0c0-9 4-15 13-15s13 6 13 15" fill="#f7f6f2"/>
+    <path d="M14 43h18v13H14zm9 13v15" fill="#d8d9bc" stroke="#35604b"/>
+    <path d="m24 79-9-13 8-5m14 17 8-12"/>
+    <path d="M82 46h22v15H82zm11 15v19" fill="#e8d7bc" stroke="#35604b"/>
+    <path d="M88 88c0-6-2-10-9-13l-4 5m7 5 11-8"/>
+    <path d="M12 90h95" stroke="#9ca77d"/>
+  </g>
+  <circle cx="91" cy="28" r="3" fill="#ba795c"/>
+</svg>
