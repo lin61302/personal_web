@@ -115,7 +115,7 @@
       previous.classList.add('is-leaving');
       phrases[current].classList.add('is-current');
       cleanupTimer = setTimeout(() => previous.classList.remove('is-leaving'), 600);
-      rotationTimer = setTimeout(advance, 4800);
+      rotationTimer = setTimeout(advance, 3500);
     };
     syncMotion = () => {
       motionButton.hidden = reducedMotion.matches;
@@ -128,7 +128,7 @@
         rotator.dataset.motion = 'reduced';
       } else if (canRotate()) {
         rotator.dataset.motion = 'running';
-        if (rotationTimer === undefined) rotationTimer = setTimeout(advance, 4800);
+        if (rotationTimer === undefined) rotationTimer = setTimeout(advance, 3500);
       } else {
         stopRotation();
         rotator.dataset.motion = 'paused';

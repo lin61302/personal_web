@@ -215,3 +215,7 @@ h1 em{font-weight:400;color:var(--green)}
 @media(max-width:360px){.hero-actions{gap:8px 13px}.about-snapshot{width:92px;margin-left:14px}.about-snapshot figcaption{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.rotating-phrase{transition:none;transform:none}.portrait:hover{transform:rotate(2deg)}.about-snapshot:hover{transform:rotate(-2deg)}.project-row:hover .project-illustration,.project-row:focus-visible .project-illustration,.project-row:hover .place-illustration,.project-row:focus-visible .place-illustration,.research-card:hover .research-art img,.research-card:focus-within .research-art img,.small-things figure:hover img,.small-things figure:focus-within img{transform:none}}
 @media print{.motion-toggle{display:none!important}.rotating-phrase{display:none!important}.rotating-phrase:first-child{display:block!important;opacity:1;transform:none}.about-snapshot{transform:none}}
+
+/* A closer, square crop of the speaking photo */
+.portrait-crop{aspect-ratio:1;overflow:hidden}
+.portrait-crop img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:62% 50%;transform:scale(1.75);transform-origin:60% 28%}
