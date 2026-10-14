@@ -216,9 +216,9 @@ h1 em{font-weight:400;color:var(--green)}
 @media(prefers-reduced-motion:reduce){.rotating-phrase{transition:none;transform:none}.portrait:hover{transform:rotate(2deg)}.about-snapshot:hover{transform:rotate(-2deg)}.project-row:hover .project-illustration,.project-row:focus-visible .project-illustration,.project-row:hover .place-illustration,.project-row:focus-visible .place-illustration,.research-card:hover .research-art img,.research-card:focus-within .research-art img,.small-things figure:hover img,.small-things figure:focus-within img{transform:none}}
 @media print{.motion-toggle{display:none!important}.rotating-phrase{display:none!important}.rotating-phrase:first-child{display:block!important;opacity:1;transform:none}.about-snapshot{transform:none}}
 
-/* A closer, square crop of the speaking photo */
-.portrait-crop{aspect-ratio:1;overflow:hidden}
-.portrait-crop img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:62% 50%;transform:scale(1.75);transform-origin:60% 28%}
+/* Render the square crop at its final size to keep small portraits clear. */
+.portrait-crop{position:relative;aspect-ratio:1;overflow:hidden}
+.portrait-crop img{position:absolute;width:160%;height:160%;max-width:none;left:-36%;top:-16.8%;aspect-ratio:auto;object-fit:cover;object-position:62% 50%;filter:saturate(.78) contrast(.94)}
 
 /* Reading comfort and gentle arrival cues */
 .reading-options{position:relative;margin-left:4px;flex-shrink:0}
@@ -243,7 +243,6 @@ h1 em{font-weight:400;color:var(--green)}
 .code-caret{color:#b6c9a3;opacity:.8}
 .code-panel.is-typing .typed-overlay .code-caret{animation:code-caret 800ms steps(2,end) 4}
 @keyframes code-caret{50%{opacity:0}}
-.portrait-crop img{transform:scale(1.6);filter:saturate(.78) contrast(.94) blur(.28px)}
 @media(max-width:720px){.reading-options{margin-left:12px}.reading-toggle{width:34px;height:34px;font-size:1rem}.reading-panel{width:220px;right:-1px}.reading-heading{font-size:.75rem}.reading-reset{font-size:.6875rem}.site-header{column-gap:0}.header-contact{white-space:nowrap}}
 @media(max-width:360px){.reading-options{margin-left:8px}.reading-toggle{width:32px;height:32px}.header-contact{font-size:.625rem}.wordmark{gap:6px}}
 @media(prefers-reduced-motion:reduce){.research-card.is-arrival{animation:none;background:#f0f2e9;border-color:#a4b696}.code-panel.is-typing .typed-overlay .code-caret{animation:none}}
