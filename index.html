@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,wght@0,400;0,450;0,500;1,400;1,450&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261014d">
-  <script src="assets/js/main.js?v=20261014d" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=20261014e">
+  <script src="assets/js/main.js?v=20261014e" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,6 +27,14 @@
         <a class="nav-link" id="tab-about" href="#about" data-tab-link="about">About</a>
       </nav>
       <a class="header-contact" href="mailto:zungru@sas.upenn.edu">Say hello <span aria-hidden="true">↗</span></a>
+      <div class="reading-options" hidden>
+        <button class="reading-toggle" type="button" aria-label="Text size controls" aria-expanded="false" aria-controls="reading-panel" title="Text size"><span aria-hidden="true">A<span>a</span></span></button>
+        <div class="reading-panel" id="reading-panel" hidden>
+          <div class="reading-heading"><label for="reading-size">Text size</label><output id="reading-value" for="reading-size" aria-live="off">100%</output></div>
+          <input id="reading-size" type="range" min="100" max="125" step="5" value="100">
+          <div class="reading-foot"><span aria-hidden="true">A <span>—</span> A</span><button class="reading-reset" type="button">Reset</button></div>
+        </div>
+      </div>
     </header>
 
     <main id="main" tabindex="-1">
@@ -114,7 +122,7 @@
         <div class="page-heading"><p class="eyebrow">A little about me</p><h1>Curiosity, on and off the clock.</h1></div>
         <div class="about-layout">
           <div class="about-copy"><h2>Hello, I’m ZR.</h2><figure class="about-snapshot"><img src="assets/images/penn-grad.jpg" alt="Zung-Ru Lin holding a bouquet at a graduation celebration" width="1017" height="1017" loading="lazy"><figcaption>One of the good days.</figcaption></figure><p>I’m a Taiwan-born researcher and data scientist at Penn’s PDRI-DevLab. I work where language, politics, and computation meet.</p><p>Outside work, I like dancing, painting, and graffiti art. Otherwise, I’m either making coffee or on my way to make some.</p><a class="text-link" href="https://pdri-devlab.upenn.edu/bio/zung-ru-lin/" target="_blank" rel="noopener">A longer introduction <span aria-hidden="true">↗</span></a></div>
-          <div class="code-panel"><div class="code-toolbar"><span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>little_things.py</span><span class="code-filetype">PY</span></div><pre aria-label="A code-style introduction"><code><span class="code-comment"># A few things that feel like me</span>
+          <div class="code-panel"><div class="code-toolbar"><span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>little_things.py</span><span class="code-filetype">PY</span></div><div class="code-content"><pre class="code-source" aria-label="A code-style introduction"><code><span class="code-comment"># A few things that feel like me</span>
 <span class="code-key">home</span> = <span class="code-string">"Taiwan"</span>
 <span class="code-key">curiosity</span> = [<span class="code-string">"food"</span>, <span class="code-string">"people"</span>, <span class="code-string">"places"</span>]
 <span class="code-key">off_the_clock</span> = [
@@ -123,7 +131,7 @@
     <span class="code-string">"painting &amp; graffiti art"</span>,
 ]
 <span class="code-key">coffee_status</span> = <span class="code-string">"brewing, or about to"</span>
-<span class="code-key">small_joys</span> = <span class="code-string">"milk tea, coffee &amp; matcha"</span></code></pre><div class="code-bottom"><span class="code-ready" aria-hidden="true"></span>Always something to learn.</div></div>
+<span class="code-key">small_joys</span> = <span class="code-string">"milk tea, coffee &amp; matcha"</span></code></pre></div><div class="code-bottom"><span class="code-ready" aria-hidden="true"></span>Always something to learn.</div></div>
         </div>
         <div class="small-things" aria-label="A few small joys"><figure><img src="assets/images/personal/boba.svg" alt="Illustration of a cup of milk tea" width="86" height="86"><figcaption>Milk tea breaks</figcaption></figure><figure><img src="assets/images/personal/coffee.svg" alt="Illustration of pour-over coffee making" width="86" height="86"><figcaption>The coffee ritual</figcaption></figure><figure><img src="assets/images/personal/matcha.svg" alt="Illustration of a matcha bowl and whisk" width="86" height="86"><figcaption>A little matcha</figcaption></figure><figure><img src="assets/images/personal/tea.svg" alt="Illustration of a teapot and cup" width="86" height="86"><figcaption>One more cup</figcaption></figure></div>
         <section class="contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">Keep in touch</p><h2 id="contact-title">Good work starts with a conversation.</h2></div><div class="contact-details"><div class="email-row"><a href="mailto:zungru@sas.upenn.edu">zungru@sas.upenn.edu <span aria-hidden="true">↗</span></a><button class="copy-button" type="button" data-copy="zungru@sas.upenn.edu" aria-label="Copy email address" hidden>Copy</button></div><div class="social-links"><a href="https://github.com/lin61302" target="_blank" rel="noopener me">GitHub <span aria-hidden="true">↗</span></a><a href="https://huggingface.co/zungru" target="_blank" rel="noopener me">Hugging Face <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/zung-ru-lin/" target="_blank" rel="noopener me">LinkedIn <span aria-hidden="true">↗</span></a></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>

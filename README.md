@@ -8,7 +8,7 @@ Production: https://personal-web-or2.pages.dev
 
 - `index.html`: introduction, tool links, six featured research projects, three collaborations, and contact details.
 - `assets/css/style.css`: typography, colors, and responsive layouts.
-- `assets/js/main.js`: tab navigation, browser history, keyboard controls, and email copying.
+- `assets/js/main.js`: tab navigation, reading-size preferences, motion, browser history, keyboard controls, and email copying.
 - `assets/images/personal/`: original drink illustrations, with earlier personal motifs retained.
 
 - `assets/images/projects/`: civic, foreign-influence, and environmental illustrations.
@@ -29,7 +29,9 @@ Open http://127.0.0.1:8080 and stop the server with Ctrl+C.
 
 Check Work, Research, and About at desktop and phone widths. Navigation supports arrows, Home, End, Enter, and Space; browser back/forward restores the selected tab. Existing `#overview`, `#deployments`, and `#links` links continue to work. Without JavaScript, all sections remain readable and anchor navigation works.
 
-The headline rotates gently while Work is visible. Visitors can pause it, and reduced-motion preferences keep it static. The photo and illustration hover effects also respect that preference.
+The header’s **Aa** control enlarges text from 100% to 125% and remembers the choice locally. Reset restores the default; Escape closes the panel and returns focus to its button.
+
+The headline rotates gently while Work is visible. Research topic links scroll to a card and briefly highlight it. The About code panel types once when it enters view, with its full text available to assistive technology and its height reserved to avoid layout jumps. Visitors can pause motion, and these effects respect reduced-motion preferences.
 
 ## Deploy
 
