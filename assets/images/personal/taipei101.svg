@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <title>Taipei 101</title>
+  <g stroke="#35604b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 7v9m-3 0h6v8h-6z" fill="#f7f6f2"/>
+    <path d="M44 24h12l-2 8h-8z" fill="#d8d9bc"/>
+    <path d="M42 32h16l-2.5 7h-11z" fill="#f7f6f2"/>
+    <path d="M41 39h18l-3 7H44z" fill="#d8d9bc"/>
+    <path d="M40 46h20l-3 7H43z" fill="#f7f6f2"/>
+    <path d="M39 53h22l-3.5 7h-15z" fill="#d8d9bc"/>
+    <path d="M38 60h24l-4 7H42z" fill="#f7f6f2"/>
+    <path d="M37 67h26l-4 7H41z" fill="#d8d9bc"/>
+    <path d="M36 74h28l-4 8H40z" fill="#f7f6f2"/>
+    <path d="M40 82h20l4 10H36z" fill="#d8d9bc"/>
+    <path d="M50 27v53m-6 4v8m12-8v8" stroke-width="1"/>
+    <path d="M29 92h42" stroke="#292b27"/>
+    <path d="M24 92V81h7v11m38 0V77h7v15" stroke="#9ca77d"/>
+    <path d="M20 35c2-4 7-5 10-2m39 12c3-4 8-4 11-1" stroke="#9ca77d"/>
+  </g>
+  <circle cx="71" cy="24" r="4" fill="#ba795c"/>
+</svg>

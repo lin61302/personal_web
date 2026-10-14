@@ -1,532 +1,104 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Zung‑Ru Lin — applied scientist building monitoring‑grade data + AI systems for social good: multilingual ingestion, deep learning + retrieval, geo/time analytics, and evaluation harnesses that stay attached in production." />
-  <title>Zung‑Ru Lin — Data + AI Systems for Social Good</title>
-
-  <!-- Fonts (optional). Remove if you prefer system fonts only. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Zung-Ru Lin, Chief Data Scientist at Penn's PDRI-DevLab. Research on news, political narratives, and geography; tools for civic and environmental research.">
+  <title>Zung-Ru Lin — Research &amp; Data</title>
+  <meta property="og:title" content="Zung-Ru Lin — Research &amp; Data">
+  <meta property="og:description" content="Research on news, place, and political perspective. A few projects, current questions, and a little about me.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css?v=2026-02-02d" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,wght@0,400;0,450;0,500;1,400;1,450&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261014">
+  <script src="assets/js/main.js?v=20261014" defer></script>
 </head>
-
 <body>
-  <!-- Graffiti + sketch layer (subtle, non-blocking) -->
-  <div class="graffiti-layer" aria-hidden="true">
-    <img class="graff-img graff-a" src="assets/images/stickers/graffiti.svg" alt="" loading="lazy" />
-    <img class="graff-img graff-b" src="assets/images/stickers/taipei101.svg" alt="" loading="lazy" />
-    <img class="graff-img graff-c" src="assets/images/stickers/boba.svg" alt="" loading="lazy" />
-    <img class="graff-img graff-d" src="assets/images/stickers/beans.svg" alt="" loading="lazy" />
-    <img class="graff-img graff-e" src="assets/images/stickers/avocado.svg" alt="" loading="lazy" />
-    <img class="graff-img graff-f" src="assets/images/stickers/pixelpal.svg" alt="" loading="lazy" />
-    <div class="graff-word graff-w1">ship • eval • trace</div>
-    <svg class="graff-tag" viewBox="0 0 240 90" aria-hidden="true" focusable="false">
-      <path class="graff-tag-stroke main" d="M10 62 C 30 20, 70 86, 110 42 S 180 18, 230 46" />
-      <path class="graff-tag-stroke accent" d="M26 58 C 46 30, 84 78, 118 48 S 182 30, 220 44" />
-    </svg>
-  </div>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-badge" aria-hidden="true">
-          <span class="avatar-mask" aria-hidden="true">
-            <img src="assets/images/profile.webp" class="avatar" alt="" loading="lazy" decoding="async" />
-          </span>
-          <img src="assets/images/mark.svg" class="brand-mark" alt="" aria-hidden="true" />
-          
-        </div>
-
-        <div class="brand-text">
-          <div class="brand-title">Zung‑Ru Lin</div>
-          <div class="brand-subtitle">Applied scientist • data + AI systems • monitoring‑grade public‑interest AI</div>
-        </div>
-      </div>
-
-      <!-- Tabs (single-page, simple) -->
-      <nav class="tabs" aria-label="Primary">
-        <button class="tab" role="tab" aria-selected="true" aria-controls="panel-overview" id="tab-overview" data-tab="overview">
-          <span class="tab-label">Overview</span>
-          <img class="tab-icon" src="assets/images/stickers/buddy.svg" alt="" aria-hidden="true" loading="lazy" />
-        </button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-deployments" id="tab-deployments" data-tab="deployments">
-          <span class="tab-label">Deployments</span>
-          <img class="tab-icon" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" loading="lazy" />
-        </button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-links" id="tab-links" data-tab="links">
-          <span class="tab-label">Links</span>
-          <img class="tab-icon" src="assets/images/stickers/beans.svg" alt="" aria-hidden="true" loading="lazy" />
-        </button>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#work" data-tab-link="work" aria-label="Zung-Ru Lin, home"><span class="monogram" aria-hidden="true">zl.</span><span>Zung-Ru Lin</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="nav-link" id="tab-work" href="#work" data-tab-link="work">Work</a>
+        <a class="nav-link" id="tab-research" href="#research" data-tab-link="research">Research</a>
+        <a class="nav-link" id="tab-about" href="#about" data-tab-link="about">About</a>
       </nav>
-    </div>
+      <a class="header-contact" href="mailto:zungru@sas.upenn.edu">Say hello <span aria-hidden="true">↗</span></a>
+    </header>
 
-    <div class="header-glow" aria-hidden="true"></div>
-  </header>
-
-  <main id="main" class="site-main">
-    <div class="container">
-
-      <!-- ===== Overview ===== -->
-      <section class="panel active" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0" data-panel="overview">
+    <main id="main" tabindex="-1">
+      <section id="work" class="panel" aria-labelledby="tab-work" data-panel="work">
         <div class="hero">
-          <div class="hero-left">
-            <div class="kicker">Personal page • applied AI for social good</div>
-
-            <h1 class="headline">
-              Building <span class="accent">data + AI systems</span> for <span class="rotate" data-words="social good|civic intelligence|early warning|resilient governance|climate adaptation|information integrity">social good</span>.
-            </h1>
-
-            <p class="lede">
-              Politics can feel like it’s moving faster than anyone can process. The headlines refresh before the context does, and instability—at home and abroad—keeps
-              compounding. In that kind of world, AI has turned into a steady companion: an information hub when you need grounding, and honestly, emotional support when
-              the news won’t stop. It’s evolving faster than it used to, which makes learning with it—and learning to live with it—more important than ever.
-            </p>
-
-            <p class="lede">
-              The motivation is personal. I’ve seen enough, domestically and internationally, to know how tragic, draining, and difficult some realities can be to sit with.
-              So the question becomes: what if the constructive side of tech power were used well? Countering erosion and polarization, widening awareness, and lowering the
-              friction for people who want to engage. Exposure shapes what people notice and what they care about. The aim here isn’t “cool AI.” It’s using the tools well.
-            </p>
-            
-
-            <div class="hero-cta">
-              <a class="btn primary" href="#deployments" data-jump="deployments">See deployed examples</a>
-              <a class="btn ghost" href="https://pdri-devlab.upenn.edu/bio/zung-ru-lin/" target="_blank" rel="noopener">PDRI‑DevLab bio</a>
-              <a class="btn ghost" href="https://github.com/lin61302" target="_blank" rel="noopener me">GitHub</a>
-              <a class="btn ghost" href="#links" data-jump="links">Contact</a>
-            </div>
-
-            <div class="meta-row">
-              <div class="meta-chip">
-                <span class="dot"></span>
-                Chief Data Scientist @
-                <a class="inline-link" href="https://pdri-devlab.upenn.edu/" target="_blank" rel="noopener">PDRI‑DevLab</a>
-                (U. of Penn)
-              </div>
-              <div class="meta-chip">
-                Focus: research + algorithm design • multilingual NLP • deep learning + retrieval • geo/time signals
-              </div>
-              <div class="meta-chip">
-                Open to collaboration • mission‑driven teams • <a class="inline-link" href="#links" data-jump="links">reach out</a>
-              </div>
-            </div>
-
-            <div class="scribble-note" aria-hidden="true">
-              <img class="mini-icon" src="assets/images/stickers/beans.svg" alt="" loading="lazy" />
-              <img class="mini-icon" src="assets/images/stickers/avocado.svg" alt="" loading="lazy" />
-              <img class="mini-icon" src="assets/images/stickers/boba.svg" alt="" loading="lazy" />
-              <img class="mini-icon" src="assets/images/stickers/taipei101.svg" alt="" loading="lazy" />
-            </div>
+          <div class="hero-copy">
+            <p class="eyebrow">Research &amp; data, with a human perspective</p>
+            <h1>Finding context<br>in a <em>noisy world.</em></h1>
+            <p class="hero-intro">I study how news describes politics and the environment, and build tools that make those patterns easier to see.</p>
+            <p class="affiliation">Chief Data Scientist · <a href="https://pdri-devlab.upenn.edu/bio/zung-ru-lin/" target="_blank" rel="noopener">PDRI-DevLab, University of Pennsylvania <span aria-hidden="true">↗</span></a></p>
+            <a class="text-link hero-link" href="#research" data-tab-link="research">What I’m working on <span aria-hidden="true">→</span></a>
           </div>
-
-          <div class="hero-right">
-            <div class="glass-card hero-card glow-follow">
-              <!-- subtle, original “cute” stickers -->
-              <img class="sticker sticker-beans" src="assets/images/stickers/beans.svg" alt="" aria-hidden="true" loading="lazy" />
-              <img class="sticker sticker-avocado" src="assets/images/stickers/avocado.svg" alt="" aria-hidden="true" loading="lazy" />
-              <img class="sticker sticker-boba" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" loading="lazy" />
-              <img class="sticker sticker-taipei" src="assets/images/stickers/taipei101.svg" alt="" aria-hidden="true" loading="lazy" />
-
-              <div class="hero-card-top">
-                <div>
-                  <div class="card-title">Outcome map</div>
-                  <div class="card-subtitle">Problem → method → result → evidence.</div>
-                </div>
-                <div class="status-pill" title="Monitoring-grade: built for reliability under drift and noise">
-                  <span class="pulse-dot" aria-hidden="true"></span>
-                  monitoring‑grade
-                </div>
-              </div>
-              <div class="segmented map-toggle" role="tablist" aria-label="Outcome map view">
-                <button class="seg-btn active" data-map="concept" aria-selected="true" type="button">Conceptual</button>
-                <button class="seg-btn" data-map="applied" aria-selected="false" type="button">Applied pipeline</button>
-              </div>
-              <div class="build-map" aria-label="Outcome map" data-concept-kicker="Purpose: shape research questions into measurable, accountable signals." data-applied-kicker="Purpose: run monitoring‑grade systems with traceable outputs.">
-                <div class="build-kicker">Purpose: shape research questions into measurable, accountable signals.</div>
-
-                <div class="build-row" data-concept-title="Research framing" data-concept-text="Define the question, decision stakes, and measurement logic for high‑stakes information environments." data-concept-out="Outcome: hypotheses • definitions • success criteria" data-applied-title="Scope" data-applied-text="Civic space, foreign influence, climate disruption, environmental events, and government sentiment; side research on corruption, human trafficking, media‑ecosystem change, U.S. immigration encounters, crisis‑driven displacement, policy tracking, and foreign‑advisory forecasting." data-applied-out="Coverage: events • actors • sentiment">
-                  <div class="build-step">01</div>
-                  <div class="build-core">
-                    <div class="build-title">Research framing</div>
-                    <div class="build-text">Define the question, decision stakes, and measurement logic for high‑stakes information environments.</div>
-                    <div class="build-out">Outcome: hypotheses • definitions • success criteria</div>
-                  </div>
-                </div>
-
-                <div class="build-row" data-concept-title="Method design" data-concept-text="Specify data strategy, model/eval plan, and risk controls (bias, drift, uncertainty)." data-concept-out="Design: data policy • evaluation • governance" data-applied-title="Pipeline" data-applied-text="Collect → normalize → translate → classify (models + keyword modifiers + hard rules + country‑specific handling) → geoparse/NER/entity linking → influence‑actor identification." data-applied-out="Infra: eval CI • drift checks • QA">
-                  <div class="build-step">02</div>
-                  <div class="build-core">
-                    <div class="build-title">Method design</div>
-                    <div class="build-text">Specify data strategy, model/eval plan, and risk controls (bias, drift, uncertainty).</div>
-                    <div class="build-out">Design: data policy • evaluation • governance</div>
-                  </div>
-                </div>
-
-                <div class="build-row" data-concept-title="Translation" data-concept-text="Turn evidence into clear, actionable signals and narratives for partners and the public." data-concept-out="Focus: clarity • accountability • use" data-applied-title="Analytics" data-applied-text="Aggregation → standardized counts → time‑series analytics → surge detection → forecasting." data-applied-out="Signals: shifts • risk • uncertainty">
-                  <div class="build-step">03</div>
-                  <div class="build-core">
-                    <div class="build-title">Translation</div>
-                    <div class="build-text">Turn evidence into clear, actionable signals and narratives for partners and the public.</div>
-                    <div class="build-out">Focus: clarity • accountability • use</div>
-                  </div>
-                </div>
-
-                <div class="build-row" data-concept-title="Accountability" data-concept-text="Publish methods and evidence; keep traceability from source to claim." data-concept-out="Artifacts: papers • code • audit trails" data-applied-title="Outputs" data-applied-text="Dashboards, APIs, funder briefings, public event summaries, and research/working papers." data-applied-out="Artifacts: GitHub • Hugging Face">
-                  <div class="build-step">04</div>
-                  <div class="build-core">
-                    <div class="build-title">Accountability</div>
-                    <div class="build-text">Publish methods and evidence; keep traceability from source to claim.</div>
-                    <div class="build-out">Artifacts: papers • code • audit trails</div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="divider"></div>
-
-              <div class="pill-row compact">
-                <span class="pill">Research-driven</span>
-                <span class="pill">Evidence-linked</span>
-                <span class="pill">Database-first</span>
-                <span class="pill">Cloud-scale</span>
-                <span class="pill">Performance-tuned</span>
-                <span class="pill">Quant + stats</span>
-              </div>
-
-              <div class="divider"></div>
-
-              <p class="tiny muted">
-                Design systems that can pivot across contexts. From research to production, build with modularity, transparency, and robustness baked in. 
-              </p>
-            </div>
-
-            <div class="side-note">
-              Built for places where the cost of being wrong is real—stress-tested and drift-aware, with explainable outputs that support action.
-            </div>
-          </div>
+          <figure class="portrait">
+            <div class="portrait-frame"><img src="assets/images/profile.webp" alt="Zung-Ru Lin speaking at a presentation" width="719" height="719" fetchpriority="high"></div>
+            <figcaption><span>A little curiosity goes a long way.</span><img src="assets/images/personal/tea.svg" alt="" width="42" height="42" aria-hidden="true"></figcaption>
+          </figure>
         </div>
 
-        <div class="section">
-          <div class="section-head">
-            <h2><img class="h2-icon" src="assets/images/stickers/avocado.svg" alt="" aria-hidden="true" loading="lazy" /> About</h2>
-            <p>Applied science for public‑interest systems: measure, model, deliver.</p>
-          </div>
-
-          <div class="cards">
-            <article class="card">
-              <h3>What I do</h3>
-              <p>
-                I build monitoring‑grade data + AI systems for public‑interest research—multilingual ingestion, event extraction, geo/time analytics, and evaluation harnesses that stay attached in production. The aim is reliable signals that decision‑makers can trust.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Tech side</h3>
-              <p>
-                Alongside applied projects, I chase foundational ML: transformer memory and long‑context modeling, retrieval‑grounded generation, grounded entity linking, and robust signal extraction under noise and drift. I like technical problems that shift capabilities across many systems.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Collaboration</h3>
-              <p>
-                Open to research labs, NGOs, policy teams, and industry partners building high‑stakes information systems. I can help with research design, data systems, modeling, and deployment.
-                <a class="link" href="#links" data-jump="links">Low‑friction contact here</a>.
-              </p>
-            </article>
-          </div>
-        </div>
+        <section class="selected-work" aria-labelledby="selected-title">
+          <div class="section-heading"><h2 id="selected-title">Selected work</h2><span class="section-aside">Open tools for public-interest research</span></div>
+          <a class="project-row" href="https://huggingface.co/spaces/zungru/mlp-civic-dashboard" target="_blank" rel="noopener">
+            <span class="project-number" aria-hidden="true">01</span><div class="project-name"><h3>Civic space</h3><span>Machine Learning for Peace</span></div><p>How civic activity and government action appear in the news.</p><span class="project-action">Explore <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="project-row" href="https://huggingface.co/spaces/zungru/mlp-rai-dashboard" target="_blank" rel="noopener">
+            <span class="project-number" aria-hidden="true">02</span><div class="project-name"><h3>Foreign influence</h3><span>RAI</span></div><p>Reporting on China- and Russia-associated activity around the world.</p><span class="project-action">Explore <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="project-row" href="https://huggingface.co/spaces/zungru/mlp-mleed-dashboard" target="_blank" rel="noopener">
+            <span class="project-number" aria-hidden="true">03</span><div class="project-name"><h3>Environment &amp; society</h3><span>MLEED</span></div><p>Environmental hazards and the ways societies respond, through local news.</p><span class="project-action">Explore <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="project-row" href="https://huggingface.co/spaces/zungru/subnational-env-dashboard" target="_blank" rel="noopener">
+            <span class="project-number" aria-hidden="true">04</span><div class="project-name"><h3>A closer look at place</h3><span>Subnational environmental data</span></div><p>Explore environmental reporting across provinces and districts.</p><span class="project-action">Explore <span aria-hidden="true">↗</span></span>
+          </a>
+          <div class="work-footnote"><p>These tools measure news coverage. Each dashboard includes its methods and data context.</p><a class="text-link" href="https://web.sas.upenn.edu/mlp-devlab/" target="_blank" rel="noopener">The wider project <span aria-hidden="true">↗</span></a></div>
+        </section>
+        <div class="desk-note"><span class="eyebrow">On my desk</span><p>How does the same event become a different political story?</p><a href="#research" data-tab-link="research" aria-label="Explore current research"><span aria-hidden="true">→</span></a></div>
       </section>
 
-      <!-- ===== Deployments (Projects + Papers) ===== -->
-      <section class="panel" role="tabpanel" id="panel-deployments" aria-labelledby="tab-deployments" tabindex="0" data-panel="deployments">
-        <div class="section">
-          <div class="section-head">
-            <h2><img class="h2-icon" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" loading="lazy" /> Deployments</h2>
-            <p>A few papers and notes that reflect the research direction—kept brief and preview-only.</p>
-          </div>
-
-          <div class="two-col">
-            <div class="card">
-              <h3>Deployed configurations</h3>
-
-              <div class="item">
-                <div class="item-top">
-                  <span class="item-title">Civic space monitoring & forecasts</span>
-                  <span class="badge">MLP-Civic</span>
-                </div>
-                <p class="muted">
-                  Event detection + interpretable early‑warning signals for shifts in protest, restriction, media pressure,
-                  and advocacy activity — designed for frequent refreshes and evidence traceability.
-                </p>
-                <div class="item-links">
-                  <a href="https://web.sas.upenn.edu/mlp-devlab/civic-space-data-and-forecasts/overview/" class="link" target="_blank" rel="noopener">Overview</a>
-                  <a href="https://huggingface.co/spaces/zungru/mlp-civic-dashboard" class="link" target="_blank" rel="noopener">Dashboard</a>
-                  <a href="https://web.sas.upenn.edu/mlp-devlab/civic-space-data-and-forecasts/forecasts/" class="link" target="_blank" rel="noopener">Forecasts</a>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="item-top">
-                  <span class="item-title">Foreign influence & coercive leverage tracking</span>
-                  <span class="badge">MLP-RAI</span>
-                </div>
-                <p class="muted">
-                  Tracks influence patterns across channels (diplomatic / economic / information / cyber) with consistent task definitions,
-                  careful normalization, and transparent aggregation.
-                </p>
-                <div class="item-links">
-                  <a href="https://web.sas.upenn.edu/mlp-devlab/rai/rai-overview/" class="link" target="_blank" rel="noopener">Overview</a>
-                  <a href="https://huggingface.co/spaces/zungru/mlp-rai-dashboard" class="link" target="_blank" rel="noopener">Dashboard</a>
-                  <a href="https://web.sas.upenn.edu/mlp-devlab/rai/technical-details/" class="link" target="_blank" rel="noopener">Technical</a>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="item-top">
-                  <span class="item-title">Climate‑driven disruption & response signals</span>
-                  <span class="badge">MLEED</span>
-                </div>
-                <p class="muted">
-                  Detects environmental shocks and social responses using multilingual event modeling + geo grounding,
-                  with downstream time‑series signals for monitoring and analysis.
-                </p>
-                <div class="item-links">
-                  <a href="https://web.sas.upenn.edu/mlp-devlab/environmental-event-and-tracking/overview/" class="link" target="_blank" rel="noopener">Overview</a>
-                  <a href="https://huggingface.co/spaces/zungru/mlp-mleed-dashboard" class="link" target="_blank" rel="noopener">Dashboard</a>
-                  <a href="https://web.sas.upenn.edu/mlp-devlab/environmental-event-and-tracking/mleed-technical-details/" class="link" target="_blank" rel="noopener">Technical</a>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="item-top">
-                  <span class="item-title">Subnational disruption monitoring (ADM1)</span>
-                  <span class="badge">Subnational</span>
-                </div>
-                <p class="muted">
-                  Map‑first monitoring at subnational resolution, wired to two‑stage geo reconciliation (country → ADM1),
-                  standardized counts, and surge detection for rapid scanning and drill‑down.
-                </p>
-                <div class="item-links">
-                  <a href="https://huggingface.co/spaces/zungru/subnational-env-dashboard#disasters-combined-adm-1-2024-01-01-2024-12-31" class="link" target="_blank" rel="noopener">Dashboard</a>
-                </div>
-              </div>
-
-              <div class="divider"></div>
-              <p class="tiny muted">
-                These are representative, not exhaustive — the emphasis is on reusable infrastructure that transfers to new domains and stakeholders.
-              </p>
-            </div>
-
-            <div class="card">
-              <h3>Selected papers & technical notes</h3>
-
-              <p class="tiny muted">Previews only (first 2 pages).</p>
-
-              <div class="paper-row">
-                <img class="paper-thumb" src="assets/images/paper_previews/modular-gated-attention.png" alt="Preview of first page: Modular Gated Attention" loading="lazy" />
-                <div class="paper-body">
-                  <div class="paper-title">Modular Gated Attention: Adaptive Architecture for Flexible Sequence Modeling</div>
-                  <div class="paper-meta">Preprint • 2025</div>
-                  <div class="item-links">
-                    <a href="assets/papers/modular-gated-attention.pdf" class="link" target="_blank" rel="noopener">Preview PDF</a>
-                    <a href="https://github.com/lin61302/Modular-Gated-Attention" class="link" target="_blank" rel="noopener">Code</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="paper-row">
-                <img class="paper-thumb" src="assets/images/paper_previews/causal-inference-ate.png" alt="Preview of first page: Causal inference methods" loading="lazy" />
-                <div class="paper-body">
-                  <div class="paper-title">Benchmarking Causal Inference Methods for ATE Estimation</div>
-                  <div class="paper-meta">Methods note • 2025</div>
-                  <div class="item-links">
-                    <a href="assets/papers/causal-inference-ate.pdf" class="link" target="_blank" rel="noopener">Preview PDF</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="paper-row">
-                <img class="paper-thumb" src="assets/images/paper_previews/civic-space-transformers.png" alt="Preview of first page: Tracking Civic Space" loading="lazy" />
-                <div class="paper-body">
-                  <div class="paper-title">Tracking Civic Space in Developing Countries with a High‑Quality Corpus of Domestic Media and Transformer Models</div>
-                  <div class="paper-meta">Preprint • 2025</div>
-                  <div class="item-links">
-                    <a href="assets/papers/civic-space-transformers.pdf" class="link" target="_blank" rel="noopener">Preview PDF</a>
-                    <a href="https://osf.io/preprints/socarxiv/zp3sr_v2" class="link" target="_blank" rel="noopener">OSF</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="paper-row">
-                <img class="paper-thumb" src="assets/images/paper_previews/foreign-influence-rai.png" alt="Preview of first page: Foreign Influence data" loading="lazy" />
-                <div class="paper-body">
-                  <div class="paper-title">Foreign Influence by Authoritarian Governments: Introducing New Data and Evidence</div>
-                  <div class="paper-meta">Working paper • 2024</div>
-                  <div class="item-links">
-                    <a href="assets/papers/foreign-influence-rai.pdf" class="link" target="_blank" rel="noopener">Preview PDF</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="paper-row">
-                <img class="paper-thumb" src="assets/images/paper_previews/dataforukraine.png" alt="Preview of first page: DataForUkraine" loading="lazy" />
-                <div class="paper-body">
-                  <div class="paper-title">#DataForUkraine: Adapting Social Science Tools for Crisis Response</div>
-                  <div class="paper-meta">Reflection • 2022</div>
-                  <div class="item-links">
-                    <a href="assets/papers/dataforukraine.pdf" class="link" target="_blank" rel="noopener">Preview PDF</a>
-                  </div>
-                </div>
-              </div>
-
-              
-
-              
-
-              <div class="divider"></div>
-              <p class="tiny muted">
-                If you’re exploring collaborations, I can share additional technical notes (evaluation harnesses, sampling QA playbooks, schema/patch patterns).
-              </p>
-            </div>
-          </div>
-
-          <div class="section">
-            <div class="section-head small">
-              <h2><img class="h2-icon" src="assets/images/stickers/taipei101.svg" alt="" aria-hidden="true" loading="lazy" /> Impact themes</h2>
-              <p>Typical problem spaces these systems support.</p>
-            </div>
-            <div class="pill-row">
-              <span class="pill">Civic space & democracy</span>
-              <span class="pill">Information integrity</span>
-              <span class="pill">Foreign influence</span>
-              <span class="pill">Climate risk & adaptation</span>
-              <span class="pill">Humanitarian response</span>
-              <span class="pill">Auditability</span>
-            </div>
-          </div>
+      <section id="research" class="panel" aria-labelledby="tab-research" data-panel="research">
+        <div class="page-heading"><p class="eyebrow">Questions I’m spending time with</p><h1>Between the lines.</h1><p>News is a record of events—and a choice about how to tell them.</p></div>
+        <div class="research-list">
+          <article class="research-entry"><div class="research-meta"><span class="entry-index">01 / Media</span><span class="status">Ongoing research</span></div><div class="research-body"><h2>Beyond tone</h2><p>I study media bias by separating who acts, what they do, the implications for government reputation, and how a story frames it. The question: how do these choices relate to polarization?</p><span class="research-topics">Actor–action sentiment · reputation · framing</span></div></article>
+          <article class="research-entry"><div class="research-meta"><span class="entry-index">02 / Geography</span><span class="status">Manuscript in preparation</span></div><div class="research-body"><h2>Putting news in its place</h2><p>AI-assisted geoparsing connects place mentions in translated news to consistent provinces and districts. I’m developing a reconciliation layer that makes those locations usable for subnational research.</p><a class="text-link" href="https://huggingface.co/spaces/zungru/subnational-env-dashboard" target="_blank" rel="noopener">Explore the related tool <span aria-hidden="true">↗</span></a></div></article>
+          <article class="research-entry"><div class="research-meta"><span class="entry-index">03 / U.S. foreign policy</span><span class="status">Working paper</span></div><div class="research-body"><h2>Aid, policy &amp; reputation</h2><p>How do aid, defense, and diplomacy shape portrayals of the United States in domestic news? Current work examines U.S. soft power and the elimination of USAID.</p><span class="research-topics">USG · foreign assistance · news sentiment</span></div></article>
         </div>
+        <section class="writing" aria-labelledby="writing-title">
+          <div class="section-heading"><h2 id="writing-title">Selected writing &amp; code</h2><span class="section-aside">A few entry points</span></div>
+          <div class="writing-row"><div><h3>Tracking civic space with domestic media</h3><p>Corpus construction &amp; transformer models · Preprint</p></div><a class="text-link" href="https://osf.io/preprints/socarxiv/zp3sr_v2" target="_blank" rel="noopener" aria-label="Read the civic space preprint">Read <span aria-hidden="true">↗</span></a></div>
+          <div class="writing-row"><div><h3>Environmental hazards &amp; societal responses</h3><p>MLEED · Data paper in preparation</p></div><a class="text-link" href="https://github.com/ML4PDevLab/MLEED-public" target="_blank" rel="noopener" aria-label="View MLEED data and documentation">Data &amp; methods <span aria-hidden="true">↗</span></a></div>
+          <div class="writing-row"><div><h3>Modular Gated Attention</h3><p>Adaptive sequence modeling · Working paper</p></div><a class="text-link" href="https://github.com/lin61302/Modular-Gated-Attention" target="_blank" rel="noopener" aria-label="View Modular Gated Attention code">Code <span aria-hidden="true">↗</span></a></div>
+          <details class="more-writing"><summary>Earlier notes &amp; paper previews <span aria-hidden="true">+</span></summary><div class="writing-row"><div><h3>Foreign influence by authoritarian governments</h3><p>Working paper · 2024</p></div><a class="text-link" href="assets/papers/foreign-influence-rai.pdf" target="_blank" rel="noopener" aria-label="Open foreign influence paper excerpt">Excerpt <span aria-hidden="true">↗</span></a></div><div class="writing-row"><div><h3>Benchmarking causal inference methods</h3><p>Methods note · 2025</p></div><a class="text-link" href="assets/papers/causal-inference-ate.pdf" target="_blank" rel="noopener" aria-label="Open causal inference methods excerpt">Excerpt <span aria-hidden="true">↗</span></a></div><div class="writing-row"><div><h3>#DataForUkraine</h3><p>Social science tools for crisis response · 2022</p></div><a class="text-link" href="assets/papers/dataforukraine.pdf" target="_blank" rel="noopener" aria-label="Open DataForUkraine excerpt">Excerpt <span aria-hidden="true">↗</span></a></div><p class="excerpt-note">Local PDFs are short excerpts, rather than full manuscripts.</p></details>
+        </section>
       </section>
 
-      <!-- ===== Links ===== -->
-      <section class="panel" role="tabpanel" id="panel-links" aria-labelledby="tab-links" tabindex="0" data-panel="links">
-        <div class="section">
-          <div class="section-head">
-            <h2><img class="h2-icon" src="assets/images/stickers/beans.svg" alt="" aria-hidden="true" loading="lazy" /> Links</h2>
-            <p>Low‑friction ways to reach me or explore artifacts.</p>
-          </div>
-
-          <div class="cards">
-            <article class="card">
-              <h3>Contact</h3>
-              <div class="link-list">
-                <div class="link-row">
-                  <a class="link-item" href="mailto:zungru@sas.upenn.edu">zungru@sas.upenn.edu</a>
-                  <button class="copy-btn" type="button" data-copy="zungru@sas.upenn.edu">Copy</button>
-                </div>
-                <div class="link-row">
-                  <a class="link-item" href="mailto:lin61302@gmail.com">lin61302@gmail.com</a>
-                  <button class="copy-btn" type="button" data-copy="lin61302@gmail.com">Copy</button>
-                </div>
-                <a class="link-item" href="https://www.linkedin.com/in/zung-ru-lin/" target="_blank" rel="noopener">LinkedIn</a>
-                <a class="link-item" href="https://www.linkedin.com/pulse/get-know-series-2-zung-ru-lin-chief-data-scientist-pdri-devlab-0bsse/" target="_blank" rel="noopener">Get to know (LinkedIn)</a>
-              </div>
-              <p class="tiny muted">Best for collaboration notes, dataset/tool questions, and applied AI opportunities.</p>
-            </article>
-
-            <article class="card">
-              <h3>Code & models</h3>
-              <div class="link-list">
-                <a class="link-item" href="https://github.com/lin61302" target="_blank" rel="noopener me">GitHub</a>
-                <a class="link-item" href="https://huggingface.co/zungru" target="_blank" rel="noopener me">Hugging Face</a>
-              </div>
-              <p class="tiny muted">Pipelines, experiments, and artifacts that support monitoring‑grade AI systems.</p>
-            </article>
-
-            <article class="card">
-              <h3>Lab</h3>
-              <div class="link-list">
-                <a class="link-item" href="https://pdri-devlab.upenn.edu/" target="_blank" rel="noopener">PDRI‑DevLab (UPenn)</a>
-                <a class="link-item" href="https://web.sas.upenn.edu/mlp-devlab/" target="_blank" rel="noopener">MLP‑DevLab (UPenn)</a>
-                <a class="link-item" href="#deployments" data-jump="deployments">Live deployments (this page)</a>
-              </div>
-              <p class="tiny muted">Where a lot of the public‑interest systems work lives.</p>
-            </article>
-          </div>
-
-          <div class="section">
-            <div class="section-head small">
-              <h2><img class="h2-icon" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" loading="lazy" /> Small things</h2>
-              <p>Useful work still benefits from a little life.</p>
-            </div>
-
-            <div class="cards">
-              <article class="card">
-                <h3>About me</h3>
-                <pre class="codeblock codeblock-mini about-typed" aria-label="About me">About: //
-  Taiwan‑born; culturally curious by default //
-  I travel through food and the stories people tell through what they cook //
-  Off the clock: dancing | handcrafts | graffiti‑inspired lettering //
-  Creative practice keeps the work human and grounded //</pre>
-              </article>
-
-              <article class="card">
-                <h3>Quick nav</h3>
-                <div class="pill-row">
-                  <a class="pill" href="#overview" data-jump="overview">Overview</a>
-                  <a class="pill" href="#deployments" data-jump="deployments">Deployments</a>
-                </div>
-              </article>
-
-              <article class="card">
-                <h3>Technique palette</h3>
-                
-                <div class="pill-row">
-                    <span class="pill">Multi-task / multi-head modeling</span>
-                    <span class="pill">Transformers + LLM integration</span>
-                    <span class="pill">Retrieval (hybrid search, RAG)</span>
-                    <span class="pill">Feature / embedding engineering</span>
-                    <!-- <span class="pill">Evaluation harness + error analysis</span> -->
-                    <span class="pill">Serving + latency-aware pipelines</span>
-                    <!-- <span class="pill">Research & algorithm design</span> -->
-                    <span class="pill">Observability + drift monitoring</span>
-                    <!-- <span class="pill">Data contracts + schema/patch layers</span> -->
-                  </div>
-              </article>
-            </div>
-          </div>
-
-          <div class="footer">
-            <div class="footer-left">
-              <span class="muted">© <span id="year"></span> Zung‑Ru Lin</span>
-              <span class="sep">•</span>
-              <span class="muted">Last updated: <span id="updated">2026-02-02</span></span>
-            </div>
-            <div class="footer-right">
-              <a class="link" href="#overview" data-jump="overview">Back to top</a>
-            </div>
-          </div>
+      <section id="about" class="panel" aria-labelledby="tab-about" data-panel="about">
+        <div class="page-heading"><p class="eyebrow">A little about me</p><h1>Curiosity, on and off the clock.</h1></div>
+        <div class="about-layout">
+          <div class="about-copy"><h2>Hello, I’m Zung-Ru.</h2><p>I’m a Taiwan-born researcher and data scientist at Penn’s PDRI-DevLab. I work where language, politics, and computation meet.</p><p>I like turning a difficult research question into something people can examine and use. Away from work, I follow food, dance, and the small details of a new place.</p><a class="text-link" href="https://pdri-devlab.upenn.edu/bio/zung-ru-lin/" target="_blank" rel="noopener">A longer introduction <span aria-hidden="true">↗</span></a></div>
+          <div class="code-panel"><div class="code-toolbar"><span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>little_things.py</span><span class="code-filetype">PY</span></div><pre aria-label="A code-style introduction"><code><span class="code-comment"># A few things that feel like me</span>
+<span class="code-key">home</span> = <span class="code-string">"Taiwan"</span>
+<span class="code-key">curiosity</span> = [<span class="code-string">"food"</span>, <span class="code-string">"people"</span>, <span class="code-string">"places"</span>]
+<span class="code-key">off_the_clock</span> = [
+    <span class="code-string">"dancing"</span>,
+    <span class="code-string">"making things by hand"</span>,
+    <span class="code-string">"graffiti lettering"</span>,
+]
+<span class="code-key">small_joys</span> = <span class="code-string">"tea eggs &amp; a good cup of tea"</span></code></pre><div class="code-bottom"><span class="code-ready" aria-hidden="true"></span>Always something to learn.</div></div>
         </div>
+        <div class="small-things" aria-label="A few small joys"><figure><img src="assets/images/personal/boba.svg" alt="Illustration of a cup of bubble tea" width="86" height="86"><figcaption>Boba breaks</figcaption></figure><figure><img src="assets/images/personal/taipei101.svg" alt="Illustration of Taipei 101" width="86" height="86"><figcaption>A familiar skyline</figcaption></figure><figure><img src="assets/images/personal/tea-eggs.svg" alt="Illustration of marbled tea eggs" width="86" height="86"><figcaption>Comfort in small things</figcaption></figure><figure><img src="assets/images/personal/tea.svg" alt="Illustration of a teapot and cup" width="86" height="86"><figcaption>Time for tea</figcaption></figure></div>
+        <section class="contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">Keep in touch</p><h2 id="contact-title">Good work starts with a conversation.</h2></div><div class="contact-details"><div class="email-row"><a href="mailto:zungru@sas.upenn.edu">zungru@sas.upenn.edu <span aria-hidden="true">↗</span></a><button class="copy-button" type="button" data-copy="zungru@sas.upenn.edu" aria-label="Copy email address" hidden>Copy</button></div><div class="social-links"><a href="https://github.com/lin61302" target="_blank" rel="noopener me">GitHub <span aria-hidden="true">↗</span></a><a href="https://huggingface.co/zungru" target="_blank" rel="noopener me">Hugging Face <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/zung-ru-lin/" target="_blank" rel="noopener me">LinkedIn <span aria-hidden="true">↗</span></a></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p></div></section>
       </section>
-
-    </div>
-  </main>
-
-  <!-- Floating personality dock (original stickers) -->
-  <div class="float-dock" aria-label="Tiny joyful things">
-    <img class="dock-item" src="assets/images/stickers/beans.svg" alt="" aria-hidden="true" data-tip="Coffee beans: debug fuel." loading="lazy" />
-    <img class="dock-item" src="assets/images/stickers/avocado.svg" alt="" aria-hidden="true" data-tip="Avocado: calm surfaces, hard problems underneath." loading="lazy" />
-    <img class="dock-item" src="assets/images/stickers/boba.svg" alt="" aria-hidden="true" data-tip="Bubble tea: tiny morale boost." loading="lazy" />
-    <img class="dock-item" src="assets/images/stickers/taipei101.svg" alt="" aria-hidden="true" data-tip="Skyline 101 icon: home‑base vibes." loading="lazy" />
-    <img class="dock-item" src="assets/images/stickers/buddy.svg" alt="" aria-hidden="true" data-tip="Pixel buddy: human‑in‑the‑loop still matters." loading="lazy" />
-    <img class="dock-item" src="assets/images/stickers/pixelpal.svg" alt="" aria-hidden="true" data-tip="Pocket‑pal: cute + curious." loading="lazy" />
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> Zung-Ru Lin</span><span class="footer-note">Made with care, and probably tea.</span><a href="mailto:zungru@sas.upenn.edu">Let’s talk <span aria-hidden="true">↗</span></a></footer>
   </div>
-  <div class="dock-tooltip" id="dock-tooltip" role="status" aria-live="polite" aria-hidden="true"></div>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

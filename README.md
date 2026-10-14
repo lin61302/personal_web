@@ -1,61 +1,32 @@
-# Zung‑Ru Lin — personal site (single page, tabbed)
+# Zung-Ru Lin — personal website
 
-A simple, high-quality **single-page** site with three tabbed sections:
-- **Overview** — what the page is about
-- **Deployments** — example applications + selected papers
-- **Links** — contact + code + writing
+A small, static portfolio with three tabs: **Work**, **Research**, and **About**. Built with HTML, CSS, and vanilla JavaScript; no package installation or build step.
 
-Everything lives in `index.html` (tabs just switch panels; no framework).
+Production: https://personal-web-or2.pages.dev
 
-## Edit content
-Open `index.html` and update text/links as you like.
+## Edit
 
-Key places:
-- Header: name + subtitle
-- Overview hero: 2–4 sentences (keep it tool-forward)
-- Deployments: swap items / links
-- Links: email / GitHub / Hugging Face / LinkedIn
+- `index.html`: introduction, project links, research summaries, and contact details.
+- `assets/css/style.css`: typography, colors, and responsive layouts.
+- `assets/js/main.js`: tab navigation, browser history, keyboard controls, and email copying.
+- `assets/images/personal/`: original boba, Taipei 101, tea-egg, and tea illustrations.
 
-## Images
-- `assets/images/profile.webp` is a small headshot used for credibility.
-- `assets/images/stickers/` contains a few subtle, original “cute” icons (coffee/avocado/buddy).
+Keep unpublished research labeled as ongoing or in preparation. The dashboard measures describe collected news coverage. Local PDFs are short manuscript excerpts; link to public papers or repositories when available.
 
-## Included PDFs
-The site includes **preview-only PDFs** under `assets/papers/` (first ~2 pages each) so you can share a safe preview without redistributing full drafts.
+## Preview
 
-If you have a public version (OSF/arXiv/journal), link to it from the paper row and keep the local file as the short preview.
+From this directory:
 
-## Run locally
-From *inside* the `personal_site` folder:
-
-```bash
-python3 -m http.server 8080
+```sh
+python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Then open:
-- `http://localhost:8080`
+Open http://127.0.0.1:8080 and stop the server with Ctrl+C.
 
-On macOS:
-
-```bash
-open http://localhost:8080
-```
-
-### Stop the server
-Use **Ctrl+C** (not Ctrl+Z).
-
-If you see `OSError: [Errno 48] Address already in use`, something is still running on that port.
-Try either:
-- pick a different port (e.g. `python3 -m http.server 8000`)
-- or find/kill the process on 8080:
-
-```bash
-lsof -i :8080
-kill -9 <PID>
-```
+Check Work, Research, and About at desktop and phone widths. Navigation supports arrows, Home, End, Enter, and Space; browser back/forward restores the selected tab. Existing `#overview`, `#deployments`, and `#links` links continue to work. Without JavaScript, all sections remain readable and anchor navigation works.
 
 ## Deploy
-- **GitHub Pages** (recommended if you already use GitHub): commit and enable Pages for the repo.
-- **Cloudflare Pages / Netlify / Vercel**: connect the repo and auto-deploy on every push.
 
-For a static HTML site like this, all four options work well. If you want the simplest free default, use GitHub Pages.
+The GitHub `main` branch is connected to the existing **Cloudflare Pages** project. Push changes to publish automatically, then verify the Cloudflare Pages check on that commit. Serve the repository root; no build command is needed.
+
+Local PDFs and earlier illustrations remain available at their existing paths.

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <title>A cup of bubble tea</title>
+  <g stroke="#292b27" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 33h42l-5 49c-.3 3-2.5 5-5.5 5h-21c-3 0-5.2-2-5.5-5z" fill="#f7f6f2"/>
+    <path d="m33 50 3.5 31c.2 2 1.7 3.5 3.8 3.5h21.4c2.1 0 3.6-1.5 3.8-3.5L69 50z" fill="#d8d9bc" stroke="none"/>
+    <path d="M33 50c9-3.5 23 3.5 36 0" stroke="#9ca77d"/>
+    <path d="m53 34 7-23h5l-7 23" fill="#f7f6f2" stroke="#35604b"/>
+    <path d="M27.5 30.5c0-2 1.5-3.5 3.5-3.5h40c2 0 3.5 1.5 3.5 3.5V34h-47z" fill="#f7f6f2"/>
+    <path d="m51 37-8 25" stroke="#35604b"/>
+    <path d="m39 40 1.5 10" stroke="#fff" stroke-width="2.5"/>
+  </g>
+  <g fill="#35604b">
+    <circle cx="42" cy="73" r="3.2"/>
+    <circle cx="52" cy="70" r="3.2"/>
+    <circle cx="61" cy="74" r="3.2"/>
+    <circle cx="46.5" cy="81" r="3.2"/>
+    <circle cx="56" cy="81" r="3.2"/>
+  </g>
+  <path d="m21 46 3 2m52 10 3-2" stroke="#ba795c" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
